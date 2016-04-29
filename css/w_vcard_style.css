@@ -1,0 +1,153 @@
+.vc_img{
+    width: 100%;
+}
+.vc_inner_content{
+    max-width: 1440px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 90px;
+    margin: 0 auto;
+}
+.vc_inner_content_np{
+    max-width: 1680px;
+    margin: 0 auto;
+}
+.vc_inner_content_center{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+.vc_p{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Light", serif;
+    color: black;
+    line-height: 30px;
+    /*margin:0;*/
+}
+.vc_small_p{
+    font-size: 16px;
+    font-family: "HK Grotesk Regular", sans-serif;
+    color: #9b9b9b;
+    line-height: 24px;
+}
+.vc_text_warp{
+    width: 50%;
+}
+.vc_feature_intro{
+    padding-right: 10%;
+    padding-left: 13%;
+    margin-top: -6%;
+    margin-bottom: 60px;
+}
+#vc_feature_intro_land{
+    width: calc(40% - 90px);
+    float: right;
+    margin-top: 28%;
+    padding-right: 90px;
+}
+#vc_feature_intro_land_l{
+    width: calc(40% - 90px);
+    float: left;
+    margin-top: 28%;
+    padding-left: 90px;
+}
+.vc_wide_content{
+    width: 100%;
+    position: relative;
+}
+.vc_land_img{
+    width: 60%;
+}
+#vc_header{
+    padding-top: 0;
+    margin-bottom: 90px;
+}
+#vc_downloads{
+    background-color: #DCD0C2;
+    padding-top: 90px;
+}
+#vc_download_h{
+    color: #5C3B17;
+    margin-bottom: 40px;
+}
+#vc_ratings{
+    background: url("../img/vc_ratings.png") no-repeat;
+    background-size: contain;
+    width: 232px;
+    height: 51px;
+    margin: 0 auto;
+}
+#vc_ratings_an{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Medium", serif;
+    color: white;
+    margin-top: 14px;
+}
+#vc_hero{
+    background: url("../img/vc_hero@2x.png") no-repeat;
+    background-size: cover;
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+}
+#vc_icon_5{
+    background: url("../img/vc_icon_5@2x.png") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+#vc_5{
+    padding:0;
+}
+#vc_4{
+    background-color: #EBEBEB;
+}
+#vc_icon_4{
+    background: url("../img/vc_icon_4@2x.png") no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+.vc_4_intro{
+    width: 50%;
+}
+#vc_package{
+    width: 168px;
+    height: 169px;
+    margin-top: 40px;
+    background: url("../img/trims_package.svg") no-repeat;
+    background-size: cover;
+    float: right;
+}
+#vc_github_icon{
+    width: 64px;
+    height: 64px;
+    float: left;
+    background: url("../img/icon_github.svg") no-repeat;
+    background-size: 64px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#vc_github_links{
+    margin-left: 84px;
+    margin-top: 40px;
+    font-weight: 100;
+    font-family: "HK Grotesk Light", serif;
+}
+.vc_link{
+    transition-property: none;
+    font-size: 16px;
+    line-height: 34px;
+    color: #80abff;
+}
+.vc_link:visited{
+    color: #80abff;
+}
+.vc_link:hover{
+    transition-property: none;
+    color: black;
+}

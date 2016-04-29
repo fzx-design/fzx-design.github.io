@@ -1,0 +1,54 @@
+#hst_header{
+    width: 100%;
+    height: 760px;
+    background: #9FEB70 url("../img/hst_header@2x.png") no-repeat center;
+    background-size: 480px;
+}
+.hst_img{
+    width:100%;
+}
+.hst_center_content{
+    width:800px;
+    margin: 90px auto;
+    text-align: center;
+}
+.hst_inner_content{
+    max-width:1440px;
+    margin:0 auto;
+    padding-left: 90px;
+    padding-right:90px;
+    padding-top:90px;
+}
+.hst_p{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Light", serif;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+}
+.hst_annotation_container{
+    margin-top:26px;
+    margin-bottom:75px;
+}
+.hst_annotation_p{
+    font-size:16px;
+    font-weight:100;
+    font-family: "HK Grotesk Light", serif;
+    color: #9d9d9d;
+    line-height: 30px;
+}
+.hst_link, .hst_link:visited{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Regular", serif;
+    color: #3BA0FF;
+    line-height: 30px;
+}
+.hst_link:hover {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "HK Grotesk Regular", serif;
+    color: #80beff;
+    line-height: 30px;
+}

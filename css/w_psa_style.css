@@ -1,0 +1,104 @@
+.psa_p{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Light", serif;
+    color: #9d9d9d;
+    line-height: 30px;
+    margin:0;
+}
+.psa_annotation_p{
+    margin: 0;
+    font-size:16px;
+    font-weight:100;
+    font-family: "HK Grotesk Light", serif;
+    color: #9d9d9d;
+    line-height: 22px;
+}
+.psa_img{
+    width: 100%;
+}
+.psa_inner_content{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+#psa_text_container{
+    position:absolute;
+    bottom:15%;
+    margin-right:90px;
+    left:50%;
+    max-width: 720px;
+}
+.psa_container_cell{
+    width:50%;
+}
+.psa_flow_intro{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.psa_flow_intro_left{
+    padding-top:120px;
+}
+.psa_flow_intro_right{
+    float:right;
+    margin-left: 30px;
+}
+#psa_header_container{
+    position:relative;
+}
+#psa_flow_1{
+    background: url("../img/psa_flow_1.svg") no-repeat;
+    background-size: cover;
+    height:217px;
+    width: 188px;
+    margin-right:30px;
+    margin-bottom: 60px;
+    float: left;
+}
+#psa_feature_evaluation{
+    margin-top:80px;
+    margin-bottom:130px;
+}
+.psa_eva_container_cell{
+    width:45%;
+    padding-bottom:80px;
+}
+#psa_hmi_grid{
+    float:left;
+}
+#psa_interface_expectation{
+    float:right;
+}
+#psa_eva_example{
+    clear:both;
+    padding: 40px 90px 90px 40px;
+    border-radius: 12px;
+    border: 1px solid #b0b0b0;
+    margin-bottom:110px;
+}
+#psa_ui_flow_1{
+    background: url("../img/psa_flow_2.svg") no-repeat;
+    background-size: cover;
+    height:245px;
+    width: 188px;
+    margin-right:30px;
+    margin-bottom: 60px;
+    float: left;
+}
+.psa_annotation_container{
+    background-color: black;
+    padding: 30px 40px;
+    width:30%;
+    top:-200px;
+    right:0;
+    position:absolute;
+    margin-right:90px;
+    max-width: 720px;
+}
+#psa_target_a_container{
+    position:relative;
+}
+#psa_13_header_container{
+    position:relative;
+}

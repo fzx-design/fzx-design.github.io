@@ -1,0 +1,159 @@
+.cs_p{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Light", serif;
+    color: #9d9d9d;
+    line-height: 30px;
+}
+.cs_subtitle_p{
+    margin: 0;
+    font-size:16px;
+    font-weight:100;
+    font-family: "HK Grotesk Light", serif;
+    color: #9d9d9d;
+    line-height: 30px;
+}
+.cs_img{
+    width: 100%;
+}
+.cs_center_content{
+    width:800px;
+    margin: 90px auto;
+    text-align: center;
+}
+.cs_inner_content{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.cs_annotation_container{
+    margin-top: 26px;
+    margin-bottom: 75px;
+}
+#cs_header_container{
+    width:100%;
+    height: 600px;
+    position:relative;
+    padding-top: 160px;
+}
+#cs_header_title{
+    background: url("../img/cs_header_title@2x.png") no-repeat;
+    background-size: cover;
+    width: 391px;
+    height: 37px;
+    margin: 0 auto;
+}
+#cs_header_img_wrap{
+    width:100%;
+    max-width: 1440px;
+    height: 563px;
+    margin: 0 auto;
+}
+#cs_header{
+    position: absolute;
+    width:100%;
+    max-width: 1440px;
+    bottom: 0;
+}
+#cs_header_bg {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom, white, #eafaff);
+    bottom:0;
+}
+#cs_1{
+    position:relative;
+    width:100%;
+    padding-top: 80px;
+    background: linear-gradient(to bottom, #e5e5e5,white);
+}
+.cs_version_bg{
+    background: url("../img/cs_version_bg@2x.png") no-repeat;
+    background-size: cover;
+    width: 412px;
+    height: 592px;
+    margin: 0 auto;
+    padding-top:60px;
+    padding-left:120px;
+    padding-right:120px;
+    text-align: center;
+}
+.cs_link, .cs_link:visited{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Regular", serif;
+    color: #3BA0FF;
+    line-height: 30px;
+}
+.cs_link:hover{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Regular", serif;
+    color: #80beff;
+    line-height: 30px;
+}
+#cs_version_1{
+    background: url("../img/cs_version_1@2x.png") no-repeat;
+    background-size: cover;
+    width: 186px;
+    height:154px;
+    margin:0 auto;
+    position:relative;
+}
+#cs_version_2_container{
+    position:relative;
+    bottom: 300px;
+}
+#cs_version_2{
+    background: url("../img/cs_version_2@2x.png") no-repeat;
+    background-size: cover;
+    width: 190px;
+    height:155px;
+    margin:0 auto;
+    position:relative;
+}
+#cs_version2_bg_gradient{
+    background: linear-gradient(to bottom, #e5e5e5,white);
+    height:372px;
+    position: relative;
+    top:-20px;
+}
+#cs_command_features{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.cs_command_features_cell{
+    width: 45%;
+}
+#cs_auto-nap{
+    width: 80px;
+    height: 80px;
+    background: url("../img/cs_autonap.svg") no-repeat left;
+    background-size: contain;
+    margin-bottom:25px;
+}
+#cs_s-access{
+    width: 80px;
+    height: 80px;
+    background: url("../img/cs_saccess.svg") no-repeat left;
+    background-size: contain;
+    margin-bottom:25px;
+}
+#cs_guide{
+    width:36%;
+    max-width: 453px;
+    float: right;
+}
+#smart_vis_container{
+    width: 55%;
+}
+#cs_vis{
+    width: 80px;
+    height: 80px;
+    background: url("../img/cs_vis.svg") no-repeat left;
+    background-size: contain;
+    margin-bottom:25px;
+}

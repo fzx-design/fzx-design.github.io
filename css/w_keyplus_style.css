@@ -1,0 +1,72 @@
+#keyplus_header{
+    width: 100%;
+    height: 480px;
+    background: white url("../img/kp_logo@2x.png") no-repeat center;
+    background-size: 108px;
+}
+.keyplus_inner_content{
+    max-width:1440px;
+    margin:0 auto;
+}
+.keyplus_img{
+    width:100%;
+}
+#keyplus_intro{
+    width:60%;
+    max-width: 900px;
+    margin: 0 auto 90px;
+}
+.keyplus_p{
+    font-size:20px;
+    font-weight:100;
+    font-family: "HK Grotesk Light", serif;
+    color: black;
+    line-height: 30px;
+    text-align: center;
+}
+#keyplus_scenario_float{
+    width: 40%;
+    max-width: 402px;
+    float: right;
+    position:relative;
+    margin-top:-180px;
+    margin-right: 6%;
+}
+.keyplus_text_container{
+    width: calc(56% - 90px);
+    margin-top:90px;
+    padding-bottom:90px;
+}
+.keyplus_feature_container{
+    padding-left: 90px;
+    padding-right: 90px;
+    max-width:1440px;
+    margin:0 auto;
+}
+#keyplus_scenario_set_container{
+    clear:both;
+    width:100%;
+    background:#f4f4f4;
+    height:680px;
+}
+#keyplus_scenario_set{
+    width: 40%;
+    max-width: 402px;
+    float: left;
+    position:relative;
+    margin-top:-150px;
+    margin-left: 6%;
+}
+#keyplus_scenario_set_text{
+    float:right;
+}
+#kp_keys{
+    width:40%;
+    max-width: 480px;
+    float: right;
+    margin-bottom: 90px;
+}
+#keyplus_keys_intro{
+    padding-left:90px;
+    padding-right:90px;
+}
