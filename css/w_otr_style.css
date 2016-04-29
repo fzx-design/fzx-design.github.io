@@ -66,3 +66,10 @@
     position:relative;
     margin-top:90px;
 }
+#otr_hst{
+    background: url("../img/otr_ui_hst@2x.jpg") no-repeat;
+    background-size: cover;
+    width:890px;
+    height:685px;
+    margin: 0 auto 90px auto;
+}

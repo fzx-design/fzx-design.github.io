@@ -32,7 +32,7 @@ $(function () {
             "is_dark":1,
             "link_to":"w_psa.html",
             "project_name":"PSA-Tongji HMI Design Research",
-            "project_year":"2012",
+            "project_year":"2013",
             "hero_cat":"project",
             "bg_position":"top"
         },

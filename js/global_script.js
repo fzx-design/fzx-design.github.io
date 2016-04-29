@@ -74,23 +74,24 @@ $(function(){
             "project_year":"2014"
         },
         {
-            "img_src":"img/m_w_cdisoul.jpg",
-            "link_to":"w_cdisoul.html",
-            "project_name":"CDI Soul System",
-            "project_year":"2013"
-        },
-        {
-            "img_src":"img/m_w_hst.jpg",
-            "link_to":"w_hst.html",
-            "project_name":"Happy Sonic Town",
-            "project_year":"2013"
-        },
-        {
             "img_src":"img/m_w_psa.jpg",
             "link_to":"w_psa.html",
             "project_name":"PSA-Tongji HMI Design Research",
+            "project_year":"2013"
+        },
+        {
+            "img_src":"img/m_w_cdisoul.jpg",
+            "link_to":"w_cdisoul.html",
+            "project_name":"CDI Soul System",
             "project_year":"2012"
         },
+        // {
+        //     "img_src":"img/m_w_hst.jpg",
+        //     "link_to":"w_hst.html",
+        //     "project_name":"Happy Sonic Town",
+        //     "project_year":"2013"
+        // },
+
         {
             "img_src":"img/m_w_vcard.jpg",
             "link_to":"w_vcard.html",
@@ -101,7 +102,7 @@ $(function(){
             "img_src":"img/m_w_otr.jpg",
             "link_to":"w_otr.html",
             "project_name":"More Works",
-            "project_year":"From 2011, 5 works"
+            "project_year":"From 2011, 6 works"
         }
     ];
     var journal_cells_data = [["img/j_1.png","#","Is Design Thinking Still a Competitive Advantage?","2013-1-1","We’re thrilled to have Sticker Mule on board as a Global Meetup Sponsor in 2016. To celebrate and kick things off they’re offering an incredible deal for Dribbblers."],["img/j_2.jpg","#","Do We Still Need a Instrument Cluster?","2016-4-1","Are there too many screens on our cabin dashboard?"],["img/j_3.png","#","Designing Interface for Simulation Games","2013-1-1","We’re thrilled to have Sticker Mule on board as a Global Meetup Sponsor in 2016. To celebrate and kick things off they’re offering an incredible deal for Dribbblers."],["img/j_4.png","#","Affinity Designer for Mac Hands-on","2015-10-13","(Almost) perfect replacement of Adobe software."],["img/j_5.png","#","Contextual User Interface Enhances Comprehension Effectiveness","2015-10-13","(Almost) perfect replacement of Adobe software."]];

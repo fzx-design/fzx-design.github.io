@@ -212,7 +212,7 @@ h3{
     height: 120px;
     /*background-color: #43B7FF;*/
     margin-top: 12px;
-    margin-bottom: 36px;
+    margin-bottom: 48px;
 }
 .journal_glance{
     transition-property: all;
@@ -224,7 +224,7 @@ h3{
     border-radius: 4px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     float: left;
-    margin-right: 22px;
+    margin-right: 28px;
 }
 .nav_items{
     margin-top: 26px;
