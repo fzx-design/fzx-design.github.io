@@ -46,6 +46,7 @@ h1{
     left: 320px;
     background-color: #FFE851;
     padding: 80px 60px;
+    z-index: 420;
 }
 .trims_img{
     width: 100%;
