@@ -54,15 +54,15 @@ body{
     margin-bottom: 18px;
 }
 #paging>.swiper-pagination-bullet{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 .swiper-pagination-bullet{
     transition-property: all;
     transition-duration: 1s;
-    width: 8px;
-    height: 8px;
-    border-radius: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
     border: 1px solid black;
     opacity: 0.5;
     background-color: transparent;
@@ -109,7 +109,7 @@ body{
     position: absolute;
     bottom: 36px;
     right: 36px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: right;
 }
 .project_name{
@@ -117,8 +117,8 @@ body{
     transition-duration: 1s;
     margin-bottom: 4px;
     text-transform: uppercase;
-    font-family: "HK Grotesk Bold", serif;
-    font-size: 16px;
+    font-family: "HK Grotesk Medium", serif;
+    font-size: 18px;
     color: black;
 }
 .splash_info_dark .project_name{

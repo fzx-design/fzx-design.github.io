@@ -131,8 +131,8 @@ h3{
     transition-property: all;
     transition-duration: 1s;
     cursor: pointer;
-    line-height: 2em;
-    height: 2em;
+    line-height: 26px;
+    /*height: 2em;*/
     opacity: 0.5;
     color: black;
 }
@@ -204,7 +204,7 @@ h3{
     /*display: none;*/
 }
 #journal_inner{
-    width: 750px;
+    width: 800px;
     margin: 0 auto;
 }
 .journal_cell_container{
@@ -237,8 +237,8 @@ h3{
         text-align: center;
     }
     #menu{
-        font-size: .9em;
-        width: 240px;
+        font-size: 16px;
+        width: 280px;
     }
     .menu_move{
         transform:translate(-75px,0);
@@ -280,7 +280,7 @@ h3{
         text-align: center;
     }
     #menu{
-        font-size: .9em;
+        font-size: 16px;
         width: 240px;
     }
     .menu_move{
@@ -377,7 +377,7 @@ h3{
 .journal_title{
     font-family: "HK Grotesk Light", serif;
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 4px;
 }
 .journal_date{
@@ -385,8 +385,9 @@ h3{
     color: rgba(0, 0, 0, 0.3);
 }
 .journal_brf{
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.3);
+    line-height: 20px;
 }
 .journal_cell_container:hover>.journal_glance{
     transition-property: all;
