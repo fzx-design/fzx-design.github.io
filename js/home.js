@@ -2,6 +2,7 @@
  * fzx home page exclusive script file
  * Created by Evan on 16/3/25.
  */
+var fzx_swiper;
 $(function () {
     //Hero object constructor
     function HeroObject(index){
@@ -93,7 +94,7 @@ $(function () {
     }
 
     //Set loop
-    var fzx_swiper = new Swiper('.swiper-container',{
+    fzx_swiper = new Swiper('.swiper-container',{
         spaceBetween: 0,
         slidesPerView: 1,
         centeredSlides: true,
@@ -128,3 +129,14 @@ $(function () {
         }
     });
 });//end jQuery
+document.addEventListener("visibilitychange", function() {
+    if(document.visibilityState=='hidden'){
+        fzx_swiper.stopAutoplay();
+        console.log('Autoplay stopped.');
+    }
+    else{
+        fzx_swiper.startAutoplay();
+        console.log('Autoplay started.');
+    }
+    // console.log(document.visibilityState);
+});
