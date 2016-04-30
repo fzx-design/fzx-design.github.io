@@ -15,13 +15,13 @@ $(function () {
         this.project_year = "2000";
         var html_con = [];
         this.getHtml = function(){
-            html_con.push("<a href='",this.link_to,"'>");
+            html_con.push("<div class='swiper-slide",this.is_dark?" dark_slide":"","'><a href='",this.link_to,"'>");
             html_con.push("<div class='hero' id='",this.hero_id);
             html_con.push("' style='background-image: url(",this.img_src,");background-position:",this.bg_position,"'>");
             html_con.push("<div class='",this.is_dark?"splash_info_dark":"splash_info","'>");
             html_con.push("<div class='project_name'>",this.project_name,"</div>");
             html_con.push("<div class='year'><div class='tag'>",this.hero_cat,"</div> ",this.project_year,"</div>");
-            html_con.push("</div></div></a>");
+            html_con.push("</div></div></a></div>");
             return html_con.join("");
         }
     }
@@ -71,137 +71,47 @@ $(function () {
     }
     // console.log(heroes.length);
     //Append HTML content
-    var loop_time = 5000;
-    var hero_gallery = $("#hero_container");
+    var hero_gallery = $("#hero_wrap");
     var paging_container = $("#paging");
     var nav = $("#nav_bar");
     for(var j=0;j<hero_count;j++){
         hero_gallery.append(heroes[j].getHtml());
-        paging_container.append("<div class='page_dot'></div>");
         console.log("Hero"+j+" appended.");
     }
-    var current_hero_id = 0;
-    var next_hero_id = 1;
-    var pre_hero_id = hero_count-1;
-    var main_loop;
-    function showHero(hero_index) {
-        // reset
-        $("#hero"+next_hero_id).css({transitionProperty:"none",transitionDuration:"0",filter:"brightness(1)","-webkit-filter":"brightness(1)",transform:"translate(100%,0)"});
-        // console.log("hero "+next_hero_id+" reset");
-        dark_now = false;
-        nav.removeClass();
-        paging_container.removeClass();
-        current_hero_id = hero_index; //if pass the index manually
-        //move
-        $("#hero"+hero_index).css({transitionProperty:"all",transitionDuration:"1s",filter:"brightness(1)","-webkit-filter":"brightness(1)",transform:"translate(0,0)"});
-        $("#hero"+pre_hero_id).css({transitionProperty:"all",transitionDuration:"1s",filter:"brightness(0.5)","-webkit-filter":"brightness(0.5)",transform:"translate(-100%,0)"});
-        // console.log("hero "+hero_index+" shown");
-        paging_container.find("div").removeClass("dot_hover");
-        //reset previous
-        paging_container.find(":nth-child("+(hero_index+1)+")").addClass("dot_hover");
-        if(heroes[hero_index].is_dark){
+    if(heroes[0].is_dark){
+        dark_now = true;
+        nav.addClass("dark_content");
+        paging_container.addClass('dark_content');
+    }
+
+    //Set loop
+    var fzx_swiper = new Swiper('.swiper-container',{
+        spaceBetween: 0,
+        slidesPerView: 1,
+        centeredSlides: true,
+        slideToClickedSlide: true,
+        grabCursor: false,
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        speed: 1000
+    });
+    var current_hero;
+    fzx_swiper.on("onSlideChangeStart", function () {
+        current_hero = fzx_swiper.slides[fzx_swiper.activeIndex];
+        if($(current_hero).hasClass('dark_slide')){
             dark_now = true;
-            nav.addClass("dark_content");
-            paging_container.addClass("dark_content");
-        }
-    }
-    function showHeroP(hero_index) {
-        //reset
-        $("#hero"+pre_hero_id).css({transitionProperty:"none",transitionDuration:"0",filter:"brightness(1)","-webkit-filter":"brightness(1)",transform:"translate(-100%,0)"});
-        nav.removeClass();
-        paging_container.removeClass();
-        //move
-        $("#hero"+hero_index).css({transitionProperty:"all",transitionDuration:"1s",filter:"brightness(1)","-webkit-filter":"brightness(1)",transform:"translate(0,0)"});
-        $("#hero"+next_hero_id).css({transitionProperty:"all",transitionDuration:"1s",filter:"brightness(.5)","-webkit-filter":"brightness(.5)",transform:"translate(100%,0)"});
-
-        paging_container.find("div").removeClass("dot_hover");
-        paging_container.find(":nth-child("+(current_hero_id+1)+")").addClass("dot_hover");
-        if(heroes[hero_index].is_dark){
-            nav.addClass("dark_content");
-            paging_container.addClass("dark_content");
-        }
-    }
-    function nextHero() {
-        if(menu_show){
-            return;
-        }
-        pre_hero_id = current_hero_id;
-        if(current_hero_id==0){
-            current_hero_id++;
-            next_hero_id = current_hero_id+1;
-        }
-        else if(current_hero_id==(hero_count-1)){
-            current_hero_id = 0;
-            next_hero_id = current_hero_id+1;
+            paging_container.addClass('dark_content');
+            if(!menu_show) nav.addClass('dark_content');
         }
         else{
-            current_hero_id++;
-            if(current_hero_id==(hero_count-1)){
-                next_hero_id = 0;
-            }
-            else next_hero_id = current_hero_id+1;
+            dark_now = false;
+            nav.removeClass();
+            paging_container.removeClass('dark_content');
         }
-
-        // console.log("Current:"+current_hero_id+",Next:"+next_hero_id+",Pre:"+pre_hero_id);
-        showHero(current_hero_id);
-    }
-    function preHero() {
-        next_hero_id = current_hero_id;
-        if(current_hero_id<=0){
-            current_hero_id = hero_count-1;
-            pre_hero_id = current_hero_id-1;
-        }
-        else if(current_hero_id==(hero_count-1)){
-            current_hero_id--;
-            pre_hero_id = current_hero_id-1;
-        }
-        else{
-            current_hero_id--;
-            if(current_hero_id==0){
-                pre_hero_id = hero_count-1;
-            }
-            else pre_hero_id = current_hero_id-1;
-        }
-        // console.log("Current:"+current_hero_id+",Next:"+next_hero_id+",Pre:"+pre_hero_id);
-        showHeroP(current_hero_id);
-    }
-    function loopHero(interval_time) {
-        main_loop = setInterval(nextHero,interval_time);
-        //pause condition
-        // $(".splash_info, .splash_info_dark").hover(function(){
-        //     clearInterval(main_loop);
-        // },function(){
-        //     main_loop = setInterval(nextHero,interval_time);
-        // });
-        return 1;
-    }
-    showHero(0);
-    loopHero(loop_time);
-    var s_pre = $("#s_pre");
-    var s_next = $("#s_next");
-    $(".switcher_area,#paging").hover(function(){
-        s_pre.css({transform:"translate(0,0)"});
-        s_next.css({transform:"translate(0,0)"});
-    },function () {
-        s_pre.css({transform:"translate(-200%,0)"});
-        s_next.css({transform:"translate(200%,0)"});
     });
-    s_pre.click(function () {
-        clearInterval(main_loop);
-        preHero();
-        loopHero(loop_time);
-        // console.log("preHero executed.");
-    });
-    s_next.click(function () {
-        clearInterval(main_loop);
-        nextHero();
-        loopHero(loop_time);
-        // console.log("nextHero executed.");
-    });
-    // j=0;
-    // for(j=0;j<hero_count;j++){
-    //     $($(".page_dot")[j]).bind("click",function () {
-    //         showHero(j);
-    //     })
-    // }
 });//end jQuery

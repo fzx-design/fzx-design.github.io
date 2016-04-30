@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>fzx - home</title>
     <link rel="stylesheet" type="text/css" href="css/global_style.css" >
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/home_style.css" >
     <link rel="icon" type="image/png" href="favicon.png" />
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/global_script.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
     <script src="js/home.js"></script>
 </head>
 <body>
@@ -15,18 +17,12 @@
 </div>
 
 <div id="content">
-<div id="paging">
-</div>
-<div id="switcher">
-    <div class="switcher_area">
-        <div id="s_pre"></div>
+    <div id="hero_container" class="swiper-container">
+        <!--<div class="swiper-button-prev" id="pre"></div>-->
+        <!--<div class="swiper-button-next" id="next"></div>-->
+        <div id="hero_wrap" class="swiper-wrapper"></div>
+        <div id="paging" class="swiper-pagination"></div>
     </div>
-    <div class="switcher_area">
-        <div id="s_next"></div>
-    </div>
-</div>
-<div id="hero_container">
-</div>
 </div>
 </body>
 </html>

@@ -47,45 +47,49 @@ body{
     opacity: 1;
 }
 #paging{
-    position: fixed;
-    text-align: center;
-    width: 120px;
-    height: 28px;
-    margin-left: -60px;
-    left:50%;
-    bottom: 24px;
-    z-index: 90;
+    margin-bottom: 18px;
 }
-.page_dot{
+#paging>.swiper-pagination-bullet{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.swiper-pagination-bullet{
     transition-property: all;
     transition-duration: 1s;
-    /*cursor: pointer;*/
-    display: inline-block;
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    opacity: 0.5;
+    background-color: transparent;
+}
+.swiper-pagination-bullet-active {
     background: black;
-    opacity: 0.2;
-    border-radius: 2px;
-    margin: 8px;
+    opacity: 1;
+}
+.swiper-pagination-bullet:hover{
+    transition-property: all;
+    transition-duration: 0.3s;
+    background-color: black;
 }
 .dot_hover{
     opacity: 1;
 }
-.dark_content .page_dot{
+.dark_content .swiper-pagination-bullet{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.dark_content .swiper-pagination-bullet-active {
     background: white;
 }
-/*.page_dot:hover{*/
-    /*transition-property: all;*/
-    /*transition-duration: 0.3s;*/
-    /*transform: scale(2,2);*/
-    /*opacity: 1;*/
-    /*background-color: #43B7FF;*/
-/*}*/
+.dark_content .swiper-pagination-bullet:hover{
+    background-color: white;
+}
 #hero_container{
     width: 100%;
     height: 100%;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .hero{
     transition-property: all;
@@ -96,7 +100,7 @@ body{
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translate(100%,0);
+    /*transform: translate(100%,0);*/
 }
 .splash_info, .splash_info_dark {
     transition-property: all;
