@@ -88,12 +88,8 @@ $(function () {
         dark_now = true;
         nav.addClass("dark_content");
         paging_container.addClass('dark_content');
-        s_pre.addClass('pre_white');
-        s_next.addClass('next_white');
-    }
-    else{
-        s_pre.addClass('pre_black');
-        s_next.addClass('next_black');
+        s_pre.css({backgroundImage:'url("img/pre_w.svg")'});
+        s_next.css({backgroundImage:'url("img/next_w.svg")'});
     }
 
     //Set loop
@@ -119,19 +115,15 @@ $(function () {
         if($(current_hero).hasClass('dark_slide')){
             dark_now = true;
             paging_container.addClass('dark_content');
-            s_pre.removeClass('pre_black');
-            s_next.removeClass('next_black');
-            s_pre.addClass('pre_white');
-            s_next.addClass('next_white');
+            s_pre.css({backgroundImage:'url("img/pre_w.svg")'});
+            s_next.css({backgroundImage:'url("img/next_w.svg")'});
             if(!menu_show) nav.addClass('dark_content');
         }
         else{
             dark_now = false;
             nav.removeClass();
-            s_pre.removeClass('pre_white');
-            s_next.removeClass('next_white');
-            s_pre.addClass('pre_black');
-            s_next.addClass('next_black');
+            s_pre.css({backgroundImage:'url("img/pre.svg")'});
+            s_next.css({backgroundImage:'url("img/next.svg")'});
             paging_container.removeClass('dark_content');
         }
     });
