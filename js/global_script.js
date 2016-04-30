@@ -193,6 +193,10 @@ $(function(){
     function showMenu() {
         //clear menu style
         menu_show = true;
+        if('undefined'==typeof(fzx_swiper)){
+            console.log('Not at index page.');
+        }
+        else fzx_swiper.stopAutoplay();
         // if(nav_area.hasClass("dark_content")) should_dark = true;
         // else should_dark = false;
         nav_area.removeClass();
@@ -226,6 +230,10 @@ $(function(){
     }
     function hideMenu() {
         menu_show = false;
+        if('undefined'==typeof(fzx_swiper)){
+            console.log('Not at index page.');
+        }
+        else fzx_swiper.startAutoplay();
         m_items.removeClass("m_selected");
         if(dark_now) nav_area.addClass("dark_content");
         inner_con.css({filter:"none","-webkit-filter":"none"});
