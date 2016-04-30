@@ -15,13 +15,13 @@ $(function () {
         this.project_year = "2000";
         var html_con = [];
         this.getHtml = function(){
-            html_con.push("<div class='swiper-slide",this.is_dark?" dark_slide":"","'><a href='",this.link_to,"'>");
+            html_con.push("<div class='swiper-slide",this.is_dark?" dark_slide":"","'>");
             html_con.push("<div class='hero' id='",this.hero_id);
             html_con.push("' style='background-image: url(",this.img_src,");background-position:",this.bg_position,"'>");
             html_con.push("<div class='",this.is_dark?"splash_info_dark":"splash_info","'>");
             html_con.push("<div class='project_name'>",this.project_name,"</div>");
             html_con.push("<div class='year'><div class='tag'>",this.hero_cat,"</div> ",this.project_year,"</div>");
-            html_con.push("</div></div></a></div>");
+            html_con.push("</div></div></div>");
             return html_con.join("");
         }
     }
