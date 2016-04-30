@@ -15,13 +15,13 @@ $(function () {
         this.project_year = "2000";
         var html_con = [];
         this.getHtml = function(){
-            html_con.push("<div class='swiper-slide",this.is_dark?" dark_slide":"","'>");
+            html_con.push("<div class='swiper-slide",this.is_dark?" dark_slide":"","'><a href='",this.link_to,"'>");
             html_con.push("<div class='hero' id='",this.hero_id);
             html_con.push("' style='background-image: url(",this.img_src,");background-position:",this.bg_position,"'>");
             html_con.push("<div class='",this.is_dark?"splash_info_dark":"splash_info","'>");
             html_con.push("<div class='project_name'>",this.project_name,"</div>");
             html_con.push("<div class='year'><div class='tag'>",this.hero_cat,"</div> ",this.project_year,"</div>");
-            html_con.push("</div></div></div>");
+            html_con.push("</div></div></a></div>");
             return html_con.join("");
         }
     }
@@ -73,15 +73,27 @@ $(function () {
     //Append HTML content
     var hero_gallery = $("#hero_wrap");
     var paging_container = $("#paging");
+    var s_pre = $('#pre');
+    var s_next = $('#next');
     var nav = $("#nav_bar");
     for(var j=0;j<hero_count;j++){
         hero_gallery.append(heroes[j].getHtml());
         console.log("Hero"+j+" appended.");
     }
+    if(is_mobile){
+        s_next.css({display:'none'});
+        s_pre.css({display:'none'});
+    }
     if(heroes[0].is_dark){
         dark_now = true;
         nav.addClass("dark_content");
         paging_container.addClass('dark_content');
+        s_pre.addClass('pre_white');
+        s_next.addClass('next_white');
+    }
+    else{
+        s_pre.addClass('pre_black');
+        s_next.addClass('next_black');
     }
 
     //Set loop
@@ -91,8 +103,9 @@ $(function () {
         centeredSlides: true,
         slideToClickedSlide: true,
         grabCursor: false,
-        // nextButton: '.swiper-button-next',
-        // prevButton: '.swiper-button-prev',
+        simulateTouch: false,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         pagination: '.swiper-pagination',
         paginationClickable: true,
         autoplay: 3000,
@@ -106,11 +119,19 @@ $(function () {
         if($(current_hero).hasClass('dark_slide')){
             dark_now = true;
             paging_container.addClass('dark_content');
+            s_pre.removeClass('pre_black');
+            s_next.removeClass('next_black');
+            s_pre.addClass('pre_white');
+            s_next.addClass('next_white');
             if(!menu_show) nav.addClass('dark_content');
         }
         else{
             dark_now = false;
             nav.removeClass();
+            s_pre.removeClass('pre_white');
+            s_next.removeClass('next_white');
+            s_pre.addClass('pre_black');
+            s_next.addClass('next_black');
             paging_container.removeClass('dark_content');
         }
     });

@@ -20,30 +20,42 @@ body{
     justify-content: center;
     align-items: center;
 }
-#s_pre{
+#pre{
     transition-property: all;
     transition-duration: .3s;
-    opacity: 0.6;
+    opacity: 0.3;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
-    background: url("../img/pre.svg") no-repeat;
-    transform: translate(-200%,0);
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    /*transform: translate(-200%,0);*/
 }
-#s_pre:hover{
+.pre_black{
+    background: url("../img/pre.svg") no-repeat center;
+}
+.pre_white{
+    background: url("../img/pre_w.svg") no-repeat center;
+}
+#pre:hover{
     opacity: 1;
 }
-#s_next{
+#next{
     transition-property: all;
     transition-duration: .3s;
-    opacity: 0.6;
+    opacity: 0.3;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
-    background: url("../img/next.svg") no-repeat;
-    transform: translate(200%,0);
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    /*transform: translate(200%,0);*/
 }
-#s_next:hover{
+.next_black{
+    background: url("../img/next.svg") no-repeat center;
+}
+.next_white{
+    background: url("../img/next_w.svg") no-repeat center;
+}
+#next:hover{
     opacity: 1;
 }
 #paging{
