@@ -74,23 +74,24 @@ $(function () {
     //Append HTML content
     var hero_gallery = $("#hero_wrap");
     var paging_container = $("#paging");
-    var s_pre = $('#pre');
-    var s_next = $('#next');
+    var switcher = $('#switchers');
+    var switcher_w = $('#switchers_w');
     var nav = $("#nav_bar");
     for(var j=0;j<hero_count;j++){
         hero_gallery.append(heroes[j].getHtml());
         console.log("Hero"+j+" appended.");
     }
     if(is_mobile){
-        s_next.css({display:'none'});
-        s_pre.css({display:'none'});
+        switcher.addClass('hide');
+        switcher_w.addClass('hide');
     }
     if(heroes[0].is_dark){
         dark_now = true;
         nav.addClass("dark_content");
         paging_container.addClass('dark_content');
-        s_pre.css({backgroundImage:'url("img/pre_w.svg")'});
-        s_next.css({backgroundImage:'url("img/next_w.svg")'});
+        switcher.addClass('hide');
+        // s_pre.css({backgroundImage:'url("img/pre_w.svg")'});
+        // s_next.css({backgroundImage:'url("img/next_w.svg")'});
     }
 
     //Set loop
@@ -116,15 +117,19 @@ $(function () {
         if($(current_hero).hasClass('dark_slide')){
             dark_now = true;
             paging_container.addClass('dark_content');
-            s_pre.css({backgroundImage:'url("img/pre_w.svg")'});
-            s_next.css({backgroundImage:'url("img/next_w.svg")'});
+            switcher.addClass('hide');
+            switcher_w.removeClass();
+            // s_pre.css({backgroundImage:'url("img/pre_w.svg")'});
+            // s_next.css({backgroundImage:'url("img/next_w.svg")'});
             if(!menu_show) nav.addClass('dark_content');
         }
         else{
             dark_now = false;
             nav.removeClass();
-            s_pre.css({backgroundImage:'url("img/pre.svg")'});
-            s_next.css({backgroundImage:'url("img/next.svg")'});
+            // s_pre.css({backgroundImage:'url("img/pre.svg")'});
+            // s_next.css({backgroundImage:'url("img/next.svg")'});
+            switcher.removeClass();
+            switcher_w.addClass('hide');
             paging_container.removeClass('dark_content');
         }
     });
