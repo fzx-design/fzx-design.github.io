@@ -204,11 +204,12 @@ h3{
     /*display: none;*/
 }
 #journal_inner{
+    -webkit-overflow-scrolling:touch;
     width: 800px;
     margin: 0 auto;
 }
 #about_container{
-    /*-webkit-overflow-scrolling:touch;*/
+    -webkit-overflow-scrolling:touch;
     overflow: auto;
     height: 100%;
 }
@@ -254,6 +255,7 @@ h3{
         transform:translate(-75px,0);
     }
     #work_inner{
+        -webkit-overflow-scrolling:touch;
         width: 1140px;
         margin: 0 auto;
     }
@@ -297,6 +299,7 @@ h3{
         transform:translate(-75px,0);
     }
     #work_inner{
+        -webkit-overflow-scrolling:touch;
         width: 1024px;
         margin: 0 auto;
     }
