@@ -122,7 +122,7 @@ $(function(){
     ];
     var journal_cells_data = [
         {
-            "img_src":"img/j_1.jpg",
+            "img_src":"",
             "link_to":"#",
             "journal_title":"Connected and Open Platform-based Approaches for Smart Car Service Design",
             "journal_date":"2016-3-21",
