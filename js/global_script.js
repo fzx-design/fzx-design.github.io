@@ -67,7 +67,7 @@ $(function(){
 
     var work_seg_html = "<div id='work_seg' class='m_seg'><div id='work_inner'></div></div>";
     var journal_seg_html = "<div id='journal_seg' class='m_seg'><div id='journal_inner'></div></div>";
-    var about_seg_html = '<div id="about_seg" class="m_seg"><div id="about_container"><iframe id="about_inner" src="about.html"></iframe></div></div>';
+    var about_seg_html = '<div id="about_seg"><div id="about_inner"></div></div>';
 
     //Retrieve cell data
     var work_cells_data = [
@@ -122,7 +122,7 @@ $(function(){
     ];
     var journal_cells_data = [
         {
-            "img_src":"",
+            "img_src":"img/j_1.png",
             "link_to":"#",
             "journal_title":"Connected and Open Platform-based Approaches for Smart Car Service Design",
             "journal_date":"2016-3-21",
@@ -164,6 +164,7 @@ $(function(){
     var w_seg = $("#work_seg");
     var j_seg = $("#journal_seg");
     var a_seg = $('#about_seg');
+    a_seg.load('about.html');
 
     //Generate work segment cells
     var work_cell_count = work_cells_data.length;
@@ -190,7 +191,6 @@ $(function(){
         journal_cell_objects[k].journal_brf = journal_cells_data[k].journal_brief;
         journal_inner_container.append(journal_cell_objects[k].jcHtml());
     }
-
     //Control
     var body_con = $('body');
     function showMenu() {

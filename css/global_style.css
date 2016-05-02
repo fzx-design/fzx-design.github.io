@@ -213,9 +213,8 @@ h3{
     height: 100%;
 }
 #about_inner{
-    border: none;
+    /*border: none;*/
     width: 100%;
-    height: calc(100% - 6px);
 }
 .journal_cell_container{
     width: 100%;

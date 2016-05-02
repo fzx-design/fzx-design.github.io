@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>fzx - About</title>
     <link rel="stylesheet" type="text/css" href="css/global_style.css" >
     <link rel="stylesheet" type="text/css" href="css/about_style.css">
     <link rel="icon" type="image/png" href="favicon.png" />
     <script src="js/jquery-2.2.1.min.js"></script>
 </head>
-<body id="about_body">
-<div id="about_topline"></div>
+<body>
+<div id="about_container">
 <div id="about_content">
     <div id="about_title"></div>
     <h2>I am an interaction design student with cross-discipline background.</h2>
@@ -145,5 +144,20 @@
         </tr>
     </table>
 </div>
+</div>
+<script>
+    $(function(){
+        var about_inner = $('#about_content');
+        var about_wrap = $('#about_container');
+        about_wrap.bind("scroll",function () {
+            if((about_inner.position().top)<=-2){
+                about_wrap.css({borderTopColor:"rgba(0,0,0,0.1)"});
+            }
+            else{
+                about_wrap.css({borderTopColor:"rgba(0,0,0,0)"});
+            }
+        });
+    });
+</script>
 </body>
 </html>

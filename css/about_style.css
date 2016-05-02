@@ -1,13 +1,14 @@
-#about_body{
-    background-color: transparent;
-    overflow: auto;
-}
-#about_topline{
-    position: fixed;
-    top:0;
-    height: 1px;
-    background: rgba(0,0,0,0.1);
+#about_container{
+    transition-property: all;
+    transition-duration: .3s;
+    position: absolute;
     width: 100%;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0);
+    height: calc(100% - 80px);
+    top: 80px;
+    overflow: auto;
 }
 #about_content{
     width: 800px;
@@ -18,14 +19,13 @@
     height: 64px;
     background: url("../img/about_title.svg") no-repeat;
     background-size: contain;
-    margin-top: 40px;
     margin-bottom: 90px;
 }
 .about_p{
     font-size: 18px;
     font-weight: 100;
     font-family: "HK Grotesk Light", serif;
-    color: #9b9b9b;
+    color: #626262;
     line-height: 30px;
 }
 .about_title_p{
@@ -39,7 +39,7 @@
 .about_an{
     font-size: 14px;
     font-family: "HK Grotesk Regular", sans-serif;
-    color: #9b9b9b;
+    color: #626262;
     line-height: 24px;
 }
 .about_form{
