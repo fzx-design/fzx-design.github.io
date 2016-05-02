@@ -208,7 +208,7 @@ h3{
     margin: 0 auto;
 }
 #about_container{
-    -webkit-overflow-scrolling:touch;
+    /*-webkit-overflow-scrolling:touch;*/
     overflow: auto;
     height: 100%;
 }
