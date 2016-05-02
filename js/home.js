@@ -74,16 +74,16 @@ $(function () {
     //Append HTML content
     var hero_gallery = $("#hero_wrap");
     var paging_container = $("#paging");
-    var switcher = $('#switchers');
-    var switcher_w = $('#switchers_w');
+    var switcher = $('#switcher');
+    var switcher_w = $('#switcher_w');
+    var switchers = $('#switchers');
     var nav = $("#nav_bar");
     for(var j=0;j<hero_count;j++){
         hero_gallery.append(heroes[j].getHtml());
         console.log("Hero"+j+" appended.");
     }
     if(is_mobile){
-        switcher.addClass('hide');
-        switcher_w.addClass('hide');
+        switchers.addClass('hide');
     }
     if(heroes[0].is_dark){
         dark_now = true;
