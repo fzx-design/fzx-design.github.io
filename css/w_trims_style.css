@@ -28,8 +28,8 @@
     /*transform: translate(360px,0);*/
     z-index: 0;
 }
-h1{
-    font-family: "HK Grotesk Bold", serif;
+.trims_h1{
+    font-family: "HK Grotesk Bold";
 }
 #trims_intro{
     position: absolute;
