@@ -272,8 +272,8 @@ $(function(){
     // });
     nav_area.hover(function () {
         if(!menu_show){
-            if(nav_area.hasClass('dark_content')) $('#content_nav_bg').css({opacity:'1',backgroundColor:'black'});
-            else $('#content_nav_bg').css({opacity:'1',backgroundColor:'white'});
+            if(nav_area.hasClass('dark_content')) $('#content_nav_bg').css({opacity:'0.9',backgroundColor:'black'});
+            else $('#content_nav_bg').css({opacity:'0.9',backgroundColor:'white'});
         }
     },function () {
         $('#content_nav_bg').css({opacity:'0'});
