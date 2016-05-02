@@ -1,6 +1,4 @@
 #about_container{
-    transition-property: all;
-    transition-duration: .3s;
     position: absolute;
     width: 100%;
     border-top-style: solid;
