@@ -1,0 +1,66 @@
+#about_body{
+    background-color: transparent;
+    overflow: auto;
+}
+#about_topline{
+    position: fixed;
+    top:0;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    width: 100%;
+}
+#about_content{
+    width: 800px;
+    margin: 0 auto;
+}
+#about_title{
+    width: 203px;
+    height: 64px;
+    background: url("../img/about_title.svg") no-repeat;
+    background-size: contain;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+.about_p{
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "HK Grotesk Light", serif;
+    color: #9b9b9b;
+    line-height: 30px;
+}
+.about_title_p{
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "HK Grotesk Light", serif;
+    color: black;
+    line-height: 30px;
+    margin-bottom: -18px;
+}
+.about_an{
+    font-size: 14px;
+    font-family: "HK Grotesk Regular", sans-serif;
+    color: #9b9b9b;
+    line-height: 24px;
+}
+.about_form{
+    width: 100%;
+    margin-bottom: 90px;
+}
+.about_form_left{
+    width: 260px;
+}
+.about_form_head{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-family: "HK Grotesk Regular", sans-serif;
+    color: black;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.about_form_left_p{
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "HK Grotesk Medium", serif;
+    color: black;
+    line-height: 30px;
+}

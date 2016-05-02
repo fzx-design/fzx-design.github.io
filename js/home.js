@@ -140,7 +140,7 @@ document.addEventListener("visibilitychange", function() {
         console.log('Autoplay stopped.');
     }
     else{
-        fzx_swiper.startAutoplay();
+        if(!menu_show)fzx_swiper.startAutoplay();
         console.log('Autoplay started.');
     }
     // console.log(document.visibilityState);

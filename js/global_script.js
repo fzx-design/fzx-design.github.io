@@ -66,7 +66,8 @@ $(function(){
     }
 
     var work_seg_html = "<div id='work_seg' class='m_seg'><div id='work_inner'></div></div>";
-    var journal_seg_html = "<div id='journal_seg' class='m_seg'><div id='journal_inner'></div></div>"
+    var journal_seg_html = "<div id='journal_seg' class='m_seg'><div id='journal_inner'></div></div>";
+    var about_seg_html = '<div id="about_seg" class="m_seg"><div id="about_container"><iframe id="about_inner" src="about.html"></iframe></div></div>';
 
     //Retrieve cell data
     var work_cells_data = [
@@ -106,13 +107,6 @@ $(function(){
             "project_name":"CDI Soul System",
             "project_year":"2012"
         },
-        // {
-        //     "img_src":"img/m_w_hst.jpg",
-        //     "link_to":"w_hst.html",
-        //     "project_name":"Happy Sonic Town",
-        //     "project_year":"2013"
-        // },
-
         {
             "img_src":"img/m_w_vcard.jpg",
             "link_to":"w_vcard.html",
@@ -126,7 +120,15 @@ $(function(){
             "project_year":"From 2011, 6 works"
         }
     ];
-    var journal_cells_data = [["img/j_1.png","#","Is Design Thinking Still a Competitive Advantage?","2013-1-1","We’re thrilled to have Sticker Mule on board as a Global Meetup Sponsor in 2016. To celebrate and kick things off they’re offering an incredible deal for Dribbblers."],["img/j_2.jpg","#","Do We Still Need a Instrument Cluster?","2016-4-1","Are there too many screens on our cabin dashboard?"],["img/j_3.png","#","Designing Interface for Simulation Games","2013-1-1","We’re thrilled to have Sticker Mule on board as a Global Meetup Sponsor in 2016. To celebrate and kick things off they’re offering an incredible deal for Dribbblers."],["img/j_4.png","#","Affinity Designer for Mac Hands-on","2015-10-13","(Almost) perfect replacement of Adobe software."],["img/j_5.png","#","Contextual User Interface Enhances Comprehension Effectiveness","2015-10-13","(Almost) perfect replacement of Adobe software."]];
+    var journal_cells_data = [
+        {
+            "img_src":"img/j_1.jpg",
+            "link_to":"#",
+            "journal_title":"Connected and Open Platform-based Approaches for Smart Car Service Design",
+            "journal_date":"2016-3-21",
+            "journal_brief":"We’re thrilled to have Sticker Mule on board as a Global Meetup Sponsor in 2016. To celebrate and kick things off they’re offering an incredible deal for Dribbblers."
+        }
+    ];
 
     //Generate nav bar
     var nav_html = [];
@@ -152,14 +154,16 @@ $(function(){
 
     //Generate menu panel
     menu_html.push("<div id='menu_panel' class='hidden'>");
-    menu_html.push("<div id='panel_bg'></div><ul>");
-    menu_html.push("</ul></div>");
+    menu_html.push("<div id='panel_bg'></div>");
+    menu_html.push("</div>");
     nav_area.after(menu_html.join(""));//append menu container
     var m_panel = $("#menu_panel");
     m_panel.append(work_seg_html);//append work segment panel
     m_panel.append(journal_seg_html);//append journal segment panel
+    m_panel.append(about_seg_html);//append about segment panel
     var w_seg = $("#work_seg");
     var j_seg = $("#journal_seg");
+    var a_seg = $('#about_seg');
 
     //Generate work segment cells
     var work_cell_count = work_cells_data.length;
@@ -179,16 +183,15 @@ $(function(){
     var journal_inner_container = $("#journal_inner");
     for(k=0;k<journal_cell_count;k++){
         journal_cell_objects[k] = new JournalCell(k);
-        journal_cell_objects[k].brf_img_src = journal_cells_data[k][0];
-        journal_cell_objects[k].j_link_to = journal_cells_data[k][1];
-        journal_cell_objects[k].journal_title = journal_cells_data[k][2];
-        journal_cell_objects[k].journal_date = journal_cells_data[k][3];
-        journal_cell_objects[k].journal_brf = journal_cells_data[k][4];
+        journal_cell_objects[k].brf_img_src = journal_cells_data[k].img_src;
+        journal_cell_objects[k].j_link_to = journal_cells_data[k].link_to;
+        journal_cell_objects[k].journal_title = journal_cells_data[k].journal_title;
+        journal_cell_objects[k].journal_date = journal_cells_data[k].journal_date;
+        journal_cell_objects[k].journal_brf = journal_cells_data[k].journal_brief;
         journal_inner_container.append(journal_cell_objects[k].jcHtml());
     }
 
     //Control
-    // var should_dark = false;
     var body_con = $('body');
     function showMenu() {
         //clear menu style
@@ -215,14 +218,17 @@ $(function(){
         if($(this).text()=="all works"){
             w_seg.removeClass("hidden");
             j_seg.addClass("hidden");
+            a_seg.addClass('hidden');
         }
         else if($(this).text()=="journal"){
             w_seg.addClass("hidden");
             j_seg.removeClass("hidden");
+            a_seg.addClass('hidden');
         }
         else if($(this).text()=="about"){
             w_seg.addClass("hidden");
             j_seg.addClass("hidden");
+            a_seg.removeClass('hidden');
         }
         //log
         console.log("showMenu executed.");
@@ -241,6 +247,7 @@ $(function(){
         m_panel.addClass("hidden");
         w_seg.addClass("hidden");
         j_seg.addClass("hidden");
+        a_seg.addClass('hidden');
         menu_links.removeClass("menu_move");
         close_panel.css({transform:"translate(80px,0)"});
         console.log("hideMenu executed.");
