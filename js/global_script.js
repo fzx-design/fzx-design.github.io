@@ -45,25 +45,25 @@ $(function(){
         return this.html_con.join("");
     };
 
-    // function JournalCell(j_index) {
-    //     this.journal_cell_id = "jc" + j_index;
-    //     this.brf_img_src = "";
-    //     this.j_link_to = "";
-    //     this.journal_title = "";
-    //     this.journal_date = "";
-    //     this.journal_brf = "";
-    //     this.html_con = [];
-    // }
-    // JournalCell.prototype.jcHtml = function () {
-    //     this.html_con.push("<a href='",this.j_link_to,"'>");
-    //     this.html_con.push("<div id='",this.journal_cell_id,"' class='journal_cell_container'>");
-    //     this.html_con.push("<div class='journal_glance' style='background-image: url(",this.brf_img_src,")'></div>");
-    //     this.html_con.push("<div class='journal_title'>",this.journal_title,"</div>");
-    //     this.html_con.push("<div class='journal_date'>",this.journal_date,"</div>");
-    //     this.html_con.push("<p class='journal_brf'>",this.journal_brf,"</p>");
-    //     this.html_con.push("</div></a>");
-    //     return this.html_con.join("");
-    // };
+    function JournalCell(j_index) {
+        this.journal_cell_id = "jc" + j_index;
+        this.brf_img_src = "";
+        this.j_link_to = "";
+        this.journal_title = "";
+        this.journal_date = "";
+        this.journal_brf = "";
+        this.html_con = [];
+    }
+    JournalCell.prototype.jcHtml = function () {
+        this.html_con.push("<a href='",this.j_link_to,"'>");
+        this.html_con.push("<div id='",this.journal_cell_id,"' class='journal_cell_container'>");
+        this.html_con.push("<div class='journal_glance' style='background-image: url(",this.brf_img_src,")'></div>");
+        this.html_con.push("<div class='journal_title'>",this.journal_title,"</div>");
+        this.html_con.push("<div class='journal_date'>",this.journal_date,"</div>");
+        this.html_con.push("<p class='journal_brf'>",this.journal_brf,"</p>");
+        this.html_con.push("</div></a>");
+        return this.html_con.join("");
+    };
 
     var work_seg_html = "<div id='work_seg' class='m_seg'><div id='work_inner'></div></div>";
     var about_seg_html = '<div id="about_seg"><div id="about_inner"></div></div>';
@@ -121,15 +121,36 @@ $(function(){
             "project_year":"From 2011, 6 works"
         }
     ];
-    // var journal_cells_data = [
-    //     {
-    //         "img_src":"img/j_1.png",
-    //         "link_to":"#",
-    //         "journal_title":"Connected and Open Platform-based Approaches for Smart Car Service Design",
-    //         "journal_date":"2016-3-21",
-    //         "journal_brief":"Two general approaches that together covers the majority of the space of smart car service innovation."
-    //     }
-    // ];
+    var journal_cells_data = [
+        {
+            "img_src":"img/j_3.png",
+            "link_to":"#",
+            "journal_title":"Do We Really Need a Big Screen Behind the Steering Wheel?",
+            "journal_date":"2016-3-21",
+            "journal_brief":"Two general approaches that together covers the majority of the space of smart car service innovation."
+        },
+        {
+            "img_src":"img/j_1.png",
+            "link_to":"#",
+            "journal_title":"Connected and Open Platform-based Approaches for Smart Car Service Design",
+            "journal_date":"2016-2-25",
+            "journal_brief":"Introducing two general approaches that together covers the majority of the space of smart car service innovation."
+        },
+        {
+            "img_src":"img/j_2.jpg",
+            "link_to":"#",
+            "journal_title":"Affinity Designer Hands-on: Making A Fancy Instrument Cluster",
+            "journal_date":"2015-11-4",
+            "journal_brief":"What would be better for a tool test than a sci-fi style speciosity?"
+        },
+        {
+            "img_src":"img/j_4.png",
+            "link_to":"#",
+            "journal_title":"Interface Design for Wearable Devices",
+            "journal_date":"2014-5-15",
+            "journal_brief":"Two general approaches that together covers the majority of the space of smart car service innovation."
+        }
+    ];
 
     //Generate nav bar
     var nav_html = [];
@@ -139,6 +160,7 @@ $(function(){
         nav_html.push("<div id='fzx' class='nav_items'><a href='index.html'><div id='title'></div><div id='home'>home</div></a></div>");
         nav_html.push("<div id='menu' class='nav_items'>");
         nav_html.push("<div class='menu_items'>all works</div>");
+        nav_html.push("<div class='menu_items'>journal</div>");
         nav_html.push("<div class='menu_items'>about</div>");
         nav_html.push("<div class='menu_items'>contact</div>");
         nav_html.push("</div>");
@@ -179,20 +201,20 @@ $(function(){
         work_cell_objects[i].work_year = work_cells_data[i].project_year;
         work_inner_container.append(work_cell_objects[i].wcHtml());
     }
-    // //Generate journal segment cells
-    // var journal_cell_count = journal_cells_data.length;
-    // var journal_cell_objects = [];
-    // var journal_inner_container = $("#journal_inner");
-    // for(k=0;k<journal_cell_count;k++){
-    //     journal_cell_objects[k] = new JournalCell(k);
-    //     journal_cell_objects[k].brf_img_src = journal_cells_data[k].img_src;
-    //     journal_cell_objects[k].j_link_to = journal_cells_data[k].link_to;
-    //     journal_cell_objects[k].journal_title = journal_cells_data[k].journal_title;
-    //     journal_cell_objects[k].journal_date = journal_cells_data[k].journal_date;
-    //     journal_cell_objects[k].journal_brf = journal_cells_data[k].journal_brief;
-    //     journal_inner_container.append(journal_cell_objects[k].jcHtml());
-    // }
-    //Control
+    //Generate journal segment cells
+    var journal_cell_count = journal_cells_data.length;
+    var journal_cell_objects = [];
+    var journal_inner_container = $("#journal_inner");
+    for(k=0;k<journal_cell_count;k++){
+        journal_cell_objects[k] = new JournalCell(k);
+        journal_cell_objects[k].brf_img_src = journal_cells_data[k].img_src;
+        journal_cell_objects[k].j_link_to = journal_cells_data[k].link_to;
+        journal_cell_objects[k].journal_title = journal_cells_data[k].journal_title;
+        journal_cell_objects[k].journal_date = journal_cells_data[k].journal_date;
+        journal_cell_objects[k].journal_brf = journal_cells_data[k].journal_brief;
+        journal_inner_container.append(journal_cell_objects[k].jcHtml());
+    }
+    // Control
     var body_con = $('body');
     function showMenu() {
         //clear menu style
@@ -221,7 +243,7 @@ $(function(){
             j_seg.addClass("hidden");
             a_seg.addClass('hidden');
         }
-        else if($(this).text()=="contact"){
+        else if($(this).text()=="journal"){
             w_seg.addClass("hidden");
             j_seg.removeClass("hidden");
             a_seg.addClass('hidden');
@@ -230,6 +252,11 @@ $(function(){
             w_seg.addClass("hidden");
             j_seg.addClass("hidden");
             a_seg.removeClass('hidden');
+        }
+        else if($(this).text()=="contact"){
+            w_seg.addClass("hidden");
+            j_seg.addClass("hidden");
+            a_seg.addClass('hidden');
         }
         //log
         console.log("showMenu executed.");
@@ -262,14 +289,14 @@ $(function(){
             w_seg.css({borderTopColor:"rgba(0,0,0,0)"});
         }
     });
-    // j_seg.bind("scroll",function () {
-    //     if((journal_inner_container.position().top)<=-2){
-    //         j_seg.css({borderTopColor:"rgba(0,0,0,0.1)"});
-    //     }
-    //     else{
-    //         j_seg.css({borderTopColor:"rgba(0,0,0,0)"});
-    //     }
-    // });
+    j_seg.bind("scroll",function () {
+        if((journal_inner_container.position().top)<=-2){
+            j_seg.css({borderTopColor:"rgba(0,0,0,0.1)"});
+        }
+        else{
+            j_seg.css({borderTopColor:"rgba(0,0,0,0)"});
+        }
+    });
     nav_area.hover(function () {
         if(!menu_show){
             if(nav_area.hasClass('dark_content')) $('#content_nav_bg').css({opacity:'0.9',backgroundColor:'black'});

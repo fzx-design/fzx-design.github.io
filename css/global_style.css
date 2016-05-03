@@ -246,7 +246,7 @@ h3{
     }
     #menu{
         font-size: 14px;
-        width: 260px;
+        width: 360px;
     }
     .menu_move{
         transform:translate(-75px,0);
@@ -289,7 +289,7 @@ h3{
     }
     #menu{
         font-size: 14px;
-        width: 240px;
+        width: 320px;
     }
     .menu_move{
         transform:translate(-75px,0);
