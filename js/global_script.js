@@ -162,7 +162,7 @@ $(function(){
         nav_html.push("<div class='menu_items'>all works</div>");
         nav_html.push("<div class='menu_items'>journal</div>");
         nav_html.push("<div class='menu_items'>about</div>");
-        nav_html.push("<div class='menu_items'>contact</div>");
+        // nav_html.push("<div class='menu_items'>contact</div>");
         nav_html.push("</div>");
         nav_html.push("<div id='close_panel'></div>");
         return nav_html.join("");
