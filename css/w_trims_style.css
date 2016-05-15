@@ -29,7 +29,7 @@
     z-index: 0;
 }
 .trims_h1{
-    font-family: "HK Grotesk Bold";
+    font-family: "HK Grotesk Bold", sans-serif;
 }
 #trims_intro{
     position: absolute;
@@ -129,7 +129,6 @@
 }
 #trims_svn_container{
     background-color:#E8E8E8;
-    padding-bottom: 60px;
     margin-bottom: 40px;
     position: relative;
 }
@@ -143,7 +142,7 @@
 }
 #trims_modal{
     width: 713px;
-    height: 593px;
+    height: 364px;
     background: url("../img/trims_modal.png") no-repeat;
     background-size: cover;
     margin: 40px auto 0;
