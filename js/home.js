@@ -29,13 +29,13 @@ $(function () {
     //Get src JSON array
     var hero_src_array = [
         {
-            "img_src":"img/cover-hero_psa12.jpg",
+            "img_src":"img/cover-hero_psa16.jpg",
             "is_dark":1,
-            "link_to":"w_psa.html",
-            "project_name":"PSA-Tongji HMI Design Research",
-            "project_year":"2013",
+            "link_to":"w_proaction.html",
+            "project_name":"Proactive HMI System",
+            "project_year":"2016",
             "hero_cat":"project",
-            "bg_position":"top"
+            "bg_position":"right"
         },
         {
             "img_src":"img/cover-hero_dcbb.jpg",
@@ -45,6 +45,15 @@ $(function () {
             "project_year":"2016",
             "hero_cat":"concept",
             "bg_position":"center"
+        },
+        {
+            "img_src":"img/cover-hero_psa12.jpg",
+            "is_dark":1,
+            "link_to":"w_psa.html",
+            "project_name":"PSA-Tongji HMI Design Research",
+            "project_year":"2013",
+            "hero_cat":"project",
+            "bg_position":"top"
         },
         {
             "img_src":"img/cover-hero_trims.jpg",
@@ -106,7 +115,7 @@ $(function () {
         prevButton: '.swiper-button-prev',
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        autoplay: 3000,
+        autoplay: 5000,
         autoplayDisableOnInteraction: false,
         loop: true,
         speed: 1000

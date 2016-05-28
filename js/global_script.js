@@ -239,24 +239,24 @@ $(function(){
         //show demanded seg
         $(this).addClass("m_selected");
         if($(this).text()=="all works"){
-            w_seg.removeClass("hidden");
-            j_seg.addClass("hidden");
-            a_seg.addClass('hidden');
+            w_seg.removeClass('seg_hidden');
+            j_seg.addClass('seg_hidden');
+            a_seg.addClass('seg_hidden');
         }
         else if($(this).text()=="journal"){
-            w_seg.addClass("hidden");
-            j_seg.removeClass("hidden");
-            a_seg.addClass('hidden');
+            w_seg.addClass('seg_hidden');
+            j_seg.removeClass('seg_hidden');
+            a_seg.addClass('seg_hidden');
         }
         else if($(this).text()=="about"){
-            w_seg.addClass("hidden");
-            j_seg.addClass("hidden");
-            a_seg.removeClass('hidden');
+            w_seg.addClass('seg_hidden');
+            j_seg.addClass('seg_hidden');
+            a_seg.removeClass('seg_hidden');
         }
         else if($(this).text()=="contact"){
-            w_seg.addClass("hidden");
-            j_seg.addClass("hidden");
-            a_seg.addClass('hidden');
+            w_seg.addClass('seg_hidden');
+            j_seg.addClass('seg_hidden');
+            a_seg.addClass('seg_hidden');
         }
         //log
         console.log("showMenu executed.");
@@ -273,9 +273,9 @@ $(function(){
         inner_con.css({filter:"none","-webkit-filter":"none"});
         body_con.removeClass();
         m_panel.addClass("hidden");
-        w_seg.addClass("hidden");
-        j_seg.addClass("hidden");
-        a_seg.addClass('hidden');
+        w_seg.addClass('seg_hidden');
+        j_seg.addClass('seg_hidden');
+        a_seg.addClass('seg_hidden');
         menu_links.removeClass("menu_move");
         close_panel.css({transform:"translate(80px,0)"});
         console.log("hideMenu executed.");

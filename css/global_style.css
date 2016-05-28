@@ -189,6 +189,11 @@ h3{
     opacity: 0;
     pointer-events: none;
 }
+.seg_hidden{
+    /*opacity: 0;*/
+    /*pointer-events: none;*/
+    display: none;
+}
 .m_seg{
     transition-property: all;
     transition-duration: .3s;
