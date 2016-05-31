@@ -122,16 +122,16 @@ $(function(){
         }
     ];
     var journal_cells_data = [
-        {
-            "img_src":"img/j_3.png",
-            "link_to":"#",
-            "journal_title":"Do We Really Need a Big Screen Behind the Steering Wheel?",
-            "journal_date":"2016-3-21",
-            "journal_brief":"Two general approaches that together covers the majority of the space of smart car service innovation."
-        },
+        // {
+        //     "img_src":"img/j_3.png",
+        //     "link_to":"#",
+        //     "journal_title":"Do We Really Need a Big Screen Behind the Steering Wheel?",
+        //     "journal_date":"2016-3-21",
+        //     "journal_brief":"Two general approaches that together covers the majority of the space of smart car service innovation."
+        // },
         {
             "img_src":"img/j_1.png",
-            "link_to":"#",
+            "link_to":"j_connect_car.html",
             "journal_title":"Connected and Open Platform-based Approaches for Smart Car Service Design",
             "journal_date":"2016-2-25",
             "journal_brief":"Introducing two general approaches that together covers the majority of the space of smart car service innovation."
@@ -139,16 +139,16 @@ $(function(){
         {
             "img_src":"img/j_2.jpg",
             "link_to":"#",
-            "journal_title":"Affinity Designer Hands-on: Making A Fancy Instrument Cluster",
+            "journal_title":"Affinity Designer Hands-on: Making a Fancy Instrument Cluster",
             "journal_date":"2015-11-4",
             "journal_brief":"What would be better for a tool test than a sci-fi style speciosity?"
         },
         {
             "img_src":"img/j_4.png",
-            "link_to":"#",
-            "journal_title":"Interface Design for Wearable Devices",
-            "journal_date":"2014-5-15",
-            "journal_brief":"Two general approaches that together covers the majority of the space of smart car service innovation."
+            "link_to":"j_wearable.html",
+            "journal_title":"Interface Design for Wearable Devices (Chinese Version)",
+            "journal_date":"2014-3-11",
+            "journal_brief":"Discussing designing interaction for wearable devices from the aspect of HCI, interface design, and service design."
         }
     ];
 
