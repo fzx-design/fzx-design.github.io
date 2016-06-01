@@ -73,7 +73,7 @@ $(function(){
     //Retrieve cell data
     var work_cells_data = [
         {
-            "img_src":"img/m_w_dbrush.jpg",
+            "img_src":"img/m_w_proa.jpg",
             "link_to":"w_proaction.html",
             "project_name":"Proactive HMI System",
             "project_year":"2016"
