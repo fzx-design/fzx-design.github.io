@@ -115,7 +115,7 @@ $(function () {
         prevButton: '.swiper-button-prev',
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        autoplay: 5000,
+        autoplay: 7000,
         autoplayDisableOnInteraction: false,
         loop: true,
         speed: 1000
