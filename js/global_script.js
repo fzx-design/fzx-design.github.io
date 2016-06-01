@@ -142,13 +142,13 @@ $(function(){
             "journal_date":"2016-2-25",
             "journal_brief":"Introducing two general approaches that together covers the majority of the space of smart car service innovation."
         },
-        {
-            "img_src":"img/j_2.jpg",
-            "link_to":"#",
-            "journal_title":"Affinity Designer Hands-on: Making a Fancy Instrument Cluster",
-            "journal_date":"2015-11-4",
-            "journal_brief":"What would be better for a tool test than a sci-fi style speciosity?"
-        },
+        // {
+        //     "img_src":"img/j_2.jpg",
+        //     "link_to":"#",
+        //     "journal_title":"Affinity Designer Hands-on: Making a Fancy Instrument Cluster",
+        //     "journal_date":"2015-11-4",
+        //     "journal_brief":"What would be better for a tool test than a sci-fi style speciosity?"
+        // },
         {
             "img_src":"img/j_4.png",
             "link_to":"j_wearable.html",
@@ -166,7 +166,7 @@ $(function(){
         nav_html.push("<div id='fzx' class='nav_items'><a href='index.html'><div id='title'></div><div id='home'>home</div></a></div>");
         nav_html.push("<div id='menu' class='nav_items'>");
         nav_html.push("<div class='menu_items'>all works</div>");
-        nav_html.push("<div class='menu_items'>journal</div>");
+        nav_html.push("<div class='menu_items'>paper</div>");
         nav_html.push("<div class='menu_items'>about</div>");
         // nav_html.push("<div class='menu_items'>contact</div>");
         nav_html.push("</div>");
@@ -249,7 +249,7 @@ $(function(){
             j_seg.addClass('seg_hidden');
             a_seg.addClass('seg_hidden');
         }
-        else if($(this).text()=="journal"){
+        else if($(this).text()=="paper"){
             w_seg.addClass('seg_hidden');
             j_seg.removeClass('seg_hidden');
             a_seg.addClass('seg_hidden');

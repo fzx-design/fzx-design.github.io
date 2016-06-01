@@ -41,8 +41,8 @@
 }
 .proa_phase_cell{
     width: 18%;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .proa_seg_title{
     margin: 60px auto;
@@ -79,12 +79,12 @@
 #proa_intro{
     position: absolute;
     width: 440px;
-    bottom: 15%;
+    bottom: 10%;
     left: 10%;
 }
 #proa_phases{
     display: flex;
-    height: 480px;
+    height: 420px;
     justify-content: space-between;
 }
 #proa_prophase_icon{
@@ -126,4 +126,15 @@
     position: absolute;
     top: 0;
     left: calc(50% - 400px);
+}
+#proa_seg_build{
+    background: url("../img/w_proa_icon_tpb.svg") no-repeat;
+    background-size: cover;
+}
+#proa_test_platform{
+    width: 807px;
+    height: 893px;
+    background: url("../img/w_proa_test platform@2x.png") no-repeat;
+    background-size: contain;
+    margin: 60px auto;
 }

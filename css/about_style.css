@@ -21,6 +21,31 @@
     background-size: contain;
     margin-bottom: 90px;
 }
+.about_mail{
+    transition-property: all;
+    transition-duration: .7s;
+    float: right;
+    width: 116px;
+    height: 30px;
+    line-height: 31px;
+    text-align: center;
+    font-family: "HK Grotesk Medium", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    /*text-transform: uppercase;*/
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2px 4px 1px;
+    border-radius: 8px;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+.about_mail:hover{
+    transition-property: all;
+    transition-duration: .3s;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+}
 .about_p{
     font-size: 18px;
     font-weight: 100;
