@@ -74,6 +74,12 @@ $(function(){
     var work_cells_data = [
         {
             "img_src":"img/m_w_dbrush.jpg",
+            "link_to":"w_proaction.html",
+            "project_name":"Proactive HMI System",
+            "project_year":"2016"
+        },
+        {
+            "img_src":"img/m_w_dbrush.jpg",
             "link_to":"w_dbrush.html",
             "project_name":"Digital Chinese Brush Bundle",
             "project_year":"2016"
