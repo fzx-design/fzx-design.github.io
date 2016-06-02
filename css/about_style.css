@@ -22,8 +22,8 @@
     margin-bottom: 90px;
 }
 .about_mail{
-    transition-property: all;
-    transition-duration: .7s;
+    /*transition-property: all;*/
+    /*transition-duration: .3s;*/
     float: right;
     width: 116px;
     height: 30px;
