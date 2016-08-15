@@ -38,6 +38,15 @@ $(function () {
             "bg_position":"right"
         },
         {
+            "img_src":"img/cover-hero_trims.jpg",
+            "is_dark":1,
+            "link_to":"w_trims.html",
+            "project_name":"trims",
+            "project_year":"2014",
+            "hero_cat":"project",
+            "bg_position":"center"
+        },
+        {
             "img_src":"img/cover-hero_dcbb.jpg",
             "is_dark":0,
             "link_to":"w_dbrush.html",
@@ -54,16 +63,8 @@ $(function () {
             "project_year":"2013",
             "hero_cat":"project",
             "bg_position":"top"
-        },
-        {
-            "img_src":"img/cover-hero_trims.jpg",
-            "is_dark":1,
-            "link_to":"w_trims.html",
-            "project_name":"trims",
-            "project_year":"2014",
-            "hero_cat":"project",
-            "bg_position":"center"
         }
+
     ];
     //Construct hero object array
     var heroes = [];
