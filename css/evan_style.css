@@ -1,0 +1,86 @@
+html{
+    font-size:100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: "SF Normal","PT",sans-serif;
+    height:100%;
+    -webkit-backface-visibility: hidden;
+}
+a{
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 1s;
+    color: black;
+}
+a:hover{
+    transition-property: all;
+    transition-duration: .3s;
+}
+a:visited{
+    color: black;
+}
+::selection{
+    background: #4A90E2;
+    color: white;
+}
+@font-face {
+    font-family: "SF Bold";
+    src:url("../src/SF-UI-Display-Bold.otf");
+}
+@font-face {
+    font-family: "SF Semi";
+    src: url("../src/SF-UI-Display-Semibold.otf");
+}
+@font-face {
+    font-family: "SF Normal";
+    src: url("../src/SF-UI-Display-Regular.otf");
+}
+@font-face {
+    font-family: "PT";
+    src: url("../src/PT_Serif-Web-Regular.ttf");
+}
+img{
+    border: none;
+    vertical-align: bottom;
+    display:block;
+    padding:0;
+    margin:0;
+}
+body{
+    font-weight: normal;
+    margin:0;
+    padding: 0;
+    background-color: white;
+}
+h1{
+  font-weight: normal;
+  font-family: "SF Bold";
+  margin-top: 0;
+  margin-bottom: 90px;
+  color: #000000;
+  font-size: 54px;
+  line-height: 56px;
+}
+h4{
+  font-weight: normal;
+  font-family: "SF Bold";
+  margin:0;
+  color: white;
+  font-size: 28px;
+  line-height: 32px;
+}
+h5{
+  font-weight: normal;
+  font-family: "SF Bold";
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+}
+.nav_bar{
+  width: 100%;
+  position: fixed;
+  height: 28px;
+  padding: 28px;
+  z-index: 99;
+}

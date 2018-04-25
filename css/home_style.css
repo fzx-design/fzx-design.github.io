@@ -1,0 +1,105 @@
+#home_header_bg{
+  background-color: #EDEDED;
+  width: 100%;
+  height: 428px;
+  position: relative;
+  z-index: 0;
+}
+#home_header_container{
+  width: 968px;
+  margin: 0 auto;
+}
+.home_header_content{
+  position: absolute;
+  margin-top: 146px;
+  width: 468px;
+}
+#home_content_container{
+  position: relative;
+  top: -50px;
+  width: 968px;
+  margin: 0 auto;
+}
+.home_story_cell{
+  transition-property: all;
+  transition-duration: .7s;
+  position: relative;
+  width: 348px;
+  height: 348px;
+  /* background-color: #55A1F9; */
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16),0 12px 24px rgba(0, 0, 0, 0.1);
+}
+.home_story_cell_hover_bg{
+  position: absolute;
+  transition-property: all;
+  transition-duration: .7s;
+  width: 100%;
+  height: 100%;
+  background-color: #55A1F9;
+  border-radius: 20px;
+  opacity: 0;
+  z-index: 20
+}
+.home_story_cell:hover{
+  cursor: pointer;
+  transform: translate(0,-20px) scale(1.1,1.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16),0 12px 32px rgba(74, 144, 226, 0.44);
+}
+.home_story_cell:hover .home_story_cell_hover_bg{
+  opacity: 0.9;
+}
+.home_story_image{
+  transition-property: all;
+  transition-duration: .3s;
+  position: absolute;
+  z-index: 10;
+  /* filter: blur(10px); */
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: no-repeat center;
+  background-size: contain;
+}
+.home_story_cell:hover #home_story_PSA{
+  background-image: url(../src/home_thumbnail_psa_blur.jpg);
+}
+.home_story_company{
+  transition-property: all;
+  transition-duration: .7s;
+  margin-bottom: 4px;
+}
+.home_story_cell:hover .home_story_company{
+  transform: scale(1.3,1.3) translate(42px,8px);
+  color: white;
+}
+#home_story_PSA{
+  background-image: url(../src/home_thumbnail_psa.jpg);
+}
+.home_story_cell_texts{
+  position: absolute;
+  z-index: 30;
+  padding: 18px;
+}
+.home_story_year{
+  transition-property: all;
+  transition-duration: .7s;
+  opacity: 0;
+  color: #215DA2;
+}
+.home_story_cell:hover .home_story_year{
+  opacity: 1;
+  transform: scale(1.3,1.3) translate(42px,12px);
+}
+.home_story_title{
+  transition-property: all;
+  transition-duration: .7s;
+  opacity: 0;
+  width: 268px;
+  margin-top: 120px;
+  margin-left: 24px;
+}
+.home_story_cell:hover .home_story_title{
+  opacity: 1;
+  transform: translate(-10px,0);
+}
