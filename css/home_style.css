@@ -23,15 +23,25 @@
   position: absolute;
   margin-top: 146px;
   width: 468px;
+  transition-property: all;
+  transition-duration: 1s;
 }
+.home_header_content.initial{
+  opacity: 0;
+  transform: translate(60px,0);
+}
+
 #home_content_container{
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   top: -50px;
   width: 968px;
   margin: 0 auto;
 }
 .home_story_cell{
-  float: left;
+  /* float: left; */
   margin-right: 64px;
   margin-bottom: 64px;
   transition-property: all;
@@ -50,18 +60,20 @@
   width: 100%;
   height: 100%;
   background-color: #55A1F9;
-  border-radius: 20px;
+  border-radius: 12px;
   opacity: 0;
   z-index: 20
 }
 .home_story_cell:hover{
+  transition-duration: .3s;
   cursor: pointer;
   border-radius: 30px;
   transform: translate(0,-20px) scale(1.1,1.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16),0 12px 32px rgba(74, 144, 226, 0.44);
 }
 .home_story_cell:hover .home_story_cell_hover_bg{
-  opacity: 0.9;
+  transition-duration: .3s;
+  opacity: 0.8;
   border-radius: 30px;
 }
 .home_story_image{
@@ -85,6 +97,7 @@
   margin-bottom: 4px;
 }
 .home_story_cell:hover .home_story_company{
+  transition-duration: .3s;
   transform: scale(1.3,1.3) translate(42px,8px);
   color: white;
 }
@@ -124,6 +137,7 @@
   color: #215DA2;
 }
 .home_story_cell:hover .home_story_year{
+  transition-duration: .3s;
   opacity: 1;
   transform: scale(1.3,1.3) translate(42px,12px);
 }
@@ -136,6 +150,7 @@
   margin-left: 24px;
 }
 .home_story_cell:hover .home_story_title{
+  transition-duration: 1s;
   opacity: 1;
   transform: translate(-10px,0);
 }
@@ -143,4 +158,11 @@
 #home_concept_container{
   position: relative;
   width: 760px;
+}
+#home_concept_title{
+  width: 100%;
+  padding-top: 20px;
+  border-style: solid;
+  border-color: #DDDDDD;
+  border-width: 1px 0 0 0;
 }

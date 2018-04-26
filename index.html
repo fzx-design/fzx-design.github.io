@@ -7,19 +7,22 @@
     <link rel="stylesheet" type="text/css" href="css/home_style.css" >
     <link rel="icon" type="image/png" href="favicon.png" />
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.parallax-scroll.js"></script>
+
 </head>
 <body>
 <div id="nav_bar_home" class="nav_bar">
-  <div id="logo_nav">evan</div>
+  <div class="logo_nav"></div>
+  <div class="button_black">about me</div>
 </div>
 
 <div id="home_header_bg">
   <div id="home_header_container">
-    <div class="home_header_content"><h1>Digital Product Designer</h1></div>
+    <div class="home_header_content initial"><h1>Digital Product Designer</h1></div>
   </div>
 </div>
 
-<div id="home_content_container">
+<div id="home_content_container"  data-parallax='{"y": -180, "smoothness": 5}'>
   <div class="home_story_cell">
     <div class="home_story_cell_texts">
       <h5 class="home_story_company">Citroën</h5>
@@ -56,11 +59,13 @@
     <div class="home_story_cell_hover_bg"></div>
     <div class="home_story_image" id="home_story_bmw"></div>
   </div>
+
+  <div id="home_concept_container">
+    <div id="home_concept_title"><h5 style="color: #838383">Concept Gallery</h5></div>
+  </div>
 </div>
 
-<!-- <div id="home_concept_container">
-  <h5>Concept Gallery</h5>
-</div> -->
-
+<!-- Header Animation -->
+<script src="js/home.js"></script>
 </body>
 </html>

@@ -19,8 +19,8 @@ a:visited{
     color: black;
 }
 ::selection{
-    background: #4A90E2;
-    color: white;
+    background: #3A3A3A;
+    color: #44AEFC;
 }
 @font-face {
     font-family: "SF Bold";
@@ -53,6 +53,7 @@ body{
 }
 h1{
   font-weight: normal;
+  font-style: normal;
   font-family: "SF Bold";
   margin-top: 0;
   margin-bottom: 90px;
@@ -62,14 +63,16 @@ h1{
 }
 h4{
   font-weight: normal;
-  font-family: "SF Bold";
+  font-style: normal;
+  font-family: "SF Semi";
   margin:0;
   color: white;
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 32px;
+  line-height: 34px;
 }
 h5{
   font-weight: normal;
+  font-style: normal;
   font-family: "SF Bold";
   margin-top: 0;
   margin-bottom: 0;
@@ -78,9 +81,48 @@ h5{
   line-height: 20px;
 }
 .nav_bar{
-  width: 100%;
+  width: calc(100% - 56px);
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   height: 28px;
   padding: 28px;
   z-index: 99;
+}
+.button_black{
+  transition-duration: .7s;
+  display: inline-block;
+  height: 20px;
+  border-radius: 6px;
+  background-color: #3A3A3A;
+  text-align: center;
+  padding: 6px 16px 6px 16px;
+  font-family: "SF Semi";
+  font-size: 16px;
+  color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.button_black:hover{
+  transition-duration: .3s;
+  cursor: pointer;
+  border-radius: 8px;
+  transform: translate(0,-2px) scale(1.1,1.1);
+  background-color: #55A1F9;
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.2);
+}
+.logo_nav{
+  transition-property: all;
+  transition-duration: .7s;
+  width: 72px;
+  height: 16px;
+  background: no-repeat center;
+  background-size: contain;
+  background-image: url(../src/logo.svg);
+}
+.logo_nav:hover{
+  transition-duration: .3s;
+  cursor: pointer;
+  transform: translate(0,-2px);
 }
