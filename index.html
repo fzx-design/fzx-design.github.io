@@ -13,55 +13,104 @@
 <body>
 <div id="nav_bar_home" class="nav_bar">
   <div class="logo_nav"></div>
-  <div class="button_black">about me</div>
+  <div class="button button_black">about me</div>
 </div>
 
 <div id="home_header_bg">
   <div id="home_header_container">
-    <div class="home_header_content initial"><h1>Digital Product Designer</h1></div>
+    <div id="header_1" class="home_header_content header_hide"><h1>Digital Product Designer</h1></div>
+    <div id="header_2" class="home_header_content header_hide"><h1 style="display: inline-block; margin-right: 12px; margin-bottom: 0">Former </h1><div id="bmw_logo"></div><h1>UX Design Intern</h1></div>
+    <div id="header_3" class="home_header_content header_hide"><h1 style="margin-bottom: 0">A dog person</h1><div id="dog_emoji"></div></div>
   </div>
 </div>
 
-<div id="home_content_container"  data-parallax='{"y": -180, "smoothness": 5}'>
-  <div class="home_story_cell">
-    <div class="home_story_cell_texts">
-      <h5 class="home_story_company">Citroën</h5>
-      <h5 class="home_story_year">2016</h5>
-      <div class="home_story_title"><h4>Balancing Complexity and Functionality</h4></div>
-    </div>
-    <div class="home_story_cell_hover_bg"></div>
-    <div class="home_story_image" id="home_story_psa"></div>
-  </div>
-  <div class="home_story_cell">
-    <div class="home_story_cell_texts">
-      <h5 class="home_story_company">VCard</h5>
-      <h5 class="home_story_year">2010</h5>
-      <div class="home_story_title"><h4>Designing the Best Weibo Experience for iPad</h4></div>
-    </div>
-    <div class="home_story_cell_hover_bg"></div>
-    <div class="home_story_image" id="home_story_vcard"></div>
-  </div>
-  <div class="home_story_cell">
-    <div class="home_story_cell_texts">
-      <h5 class="home_story_company">Huawei</h5>
-      <h5 class="home_story_year">2017</h5>
-      <div class="home_story_title"><h4>Building the Container for a Complex Workflow</h4></div>
-    </div>
-    <div class="home_story_cell_hover_bg"></div>
-    <div class="home_story_image" id="home_story_huawei"></div>
-  </div>
-  <div class="home_story_cell">
-    <div class="home_story_cell_texts">
-      <h5 class="home_story_company" style="color: white">BMW</h5>
-      <h5 class="home_story_year">2016</h5>
-      <div class="home_story_title"><h4>Enabling Seamless Interactions</h4></div>
-    </div>
-    <div class="home_story_cell_hover_bg"></div>
-    <div class="home_story_image" id="home_story_bmw"></div>
+<div id="home_body">
+  <div id="home_story_container"  data-parallax='{"y": -100, "smoothness": 5}'>
+      <div class="home_story_cell">
+        <div class="home_story_cell_texts">
+          <h5 class="home_story_company">Citroën</h5>
+          <h5 class="home_story_year">2016</h5>
+          <div class="home_story_title"><h4>Balancing Complexity and Functionality</h4></div>
+        </div>
+        <div class="home_story_cell_hover_bg"></div>
+        <div class="home_story_image" id="home_story_psa"></div>
+      </div>
+      <div class="home_story_cell">
+        <div class="home_story_cell_texts">
+          <h5 class="home_story_company">VCard</h5>
+          <h5 class="home_story_year">2010</h5>
+          <div class="home_story_title"><h4>Designing the Best Weibo Experience for iPad</h4></div>
+        </div>
+        <div class="home_story_cell_hover_bg"></div>
+        <div class="home_story_image" id="home_story_vcard"></div>
+      </div>
+      <div class="home_story_cell">
+        <div class="home_story_cell_texts">
+          <h5 class="home_story_company">Huawei</h5>
+          <h5 class="home_story_year">2017</h5>
+          <div class="home_story_title"><h4>Building the Container for a Complex Workflow</h4></div>
+        </div>
+        <div class="home_story_cell_hover_bg"></div>
+        <div class="home_story_image" id="home_story_huawei"></div>
+      </div>
+      <div class="home_story_cell">
+        <div class="home_story_cell_texts">
+          <h5 class="home_story_company" style="color: white">BMW</h5>
+          <h5 class="home_story_year">2016</h5>
+          <div class="home_story_title"><h4>Enabling Seamless Interactions</h4></div>
+        </div>
+        <div class="home_story_cell_hover_bg"></div>
+        <div class="home_story_image" id="home_story_bmw"></div>
+      </div>
   </div>
 
   <div id="home_concept_container">
-    <div id="home_concept_title"><h5 style="color: #838383">Concept Gallery</h5></div>
+      <div id="home_concept_title"><h5 style="color: #838383">Concept Gallery</h5></div>
+      <div class="home_concept_cell">
+        <div class="home_concept_cell_text_container">
+          <div class="home_concept_cell_name">Trims</div>
+          <div class="home_concept_cell_intro">A design production pipeline connecting designers and developers</div>
+        </div>
+        <div id="home_concept_trims" class="home_concept_cell_thumbnail"></div>
+      </div>
+
+      <div class="home_concept_cell">
+        <div class="home_concept_cell_text_container">
+          <div class="home_concept_cell_name">CDI Soul</div>
+          <div class="home_concept_cell_intro">Experimenting sustainable smart space design</div>
+        </div>
+        <div id="home_concept_cdisoul" class="home_concept_cell_thumbnail"></div>
+      </div>
+
+      <div class="home_concept_cell">
+        <div class="home_concept_cell_text_container">
+          <div class="home_concept_cell_name">DBrush</div>
+          <div class="home_concept_cell_intro">Bringing traditional Chinese calligraphy to the digital platform</div>
+        </div>
+        <div id="home_concept_dbrush" class="home_concept_cell_thumbnail"></div>
+      </div>
+
+      <div class="home_concept_cell">
+        <div class="home_concept_cell_text_container">
+          <div class="home_concept_cell_name">Key Plus</div>
+          <div class="home_concept_cell_intro">Program your car on the phone.</div>
+        </div>
+        <div id="home_concept_keyplus" class="home_concept_cell_thumbnail"></div>
+      </div>
+
+    </div>
+</div>
+
+<div id="footer">
+  <div id="footer_flex">
+    <div id="annotation_area">
+      <div class="annotation" style="font-family: 'SF Semi' ">Some content may be modified or hidden due to non-disclosure agreements.</div>
+      <div class="annotation">© 2018 Evan Feng</div>
+    </div>
+    <div id="button_area">
+      <div class="button button_pink">dribbble</div>
+      <div class="button button_white">mail me</div>
+    </div>
   </div>
 </div>
 
