@@ -16,7 +16,9 @@
   z-index: 0;
 }
 #home_header_container{
-  width: 968px;
+  width: 912px;
+  padding-left: 28px;
+  padding-right: 28px;
   margin: 0 auto;
 }
 .home_header_content{
@@ -48,7 +50,8 @@
 }
 #home_body{
   position: relative;
-  width: 968px;
+  width: 912px;
+  padding:0 28px 0 28px;
   margin: 0 auto;
 }
 #home_story_container{
