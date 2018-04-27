@@ -97,6 +97,7 @@ h5{
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
   height: 32px;
   padding: 28px;
   z-index: 99;
@@ -154,7 +155,8 @@ h5{
   transform: translate(0,-2px);
 }
 #logo_area{
-  cursor: pointer;
+  transition-property: all;
+  transition-duration: .7s;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -180,6 +182,9 @@ h5{
   background-size: contain;
   background-image: url(../src/button_back.svg);
 }
+#button_back.hide{
+  transform: translate(-65px,0);
+}
 #logo_area:hover #logo_nav_story{
   transition-duration: .3s;
   transform: translate(-6px,0px);
@@ -187,6 +192,9 @@ h5{
 #logo_area:hover #button_back{
   transition-duration: .3s;
   transform: scale(1.1,1.1);
+}
+#logo_area.hide{
+  transform: translate(-44px,0);
 }
 #footer{
   width: calc(100% - 56px);
@@ -209,10 +217,9 @@ h5{
 .story_header_img{
   width: 100%;
   margin-bottom: 48px;
-  /* height: 550px; */
-  /* background: no-repeat center;
-  background-size: contain;
-  background-image: url(../src/psa_cover.jpg); */
+  height: 550px;
+  background: no-repeat bottom;
+  background-size: cover;
 }
 #story_container{
   position: relative;
@@ -231,4 +238,12 @@ h5{
   line-height: 28px;
   color: #4A90E2;
   margin-bottom: 30px;
+}
+#story_info_box{
+  margin-left: 80px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

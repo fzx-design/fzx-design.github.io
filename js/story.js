@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  var nav = '<a href="index.html"><div id="logo_area">\
-    <div id="button_back"></div>\
+  var nav = '<a href="index.html"><div id="logo_area" class="hide">\
+    <div id="button_back" class="hide"></div>\
     <div id="logo_nav_story"></div>\
   </div></a>\
   <a href="about.html"><div class="button button_black">about me</div></a>';
@@ -16,4 +16,10 @@ $(document).ready(function(){
   </div>';
   $(".nav_bar").append(nav);
   $("#footer").append(footer);
+
+  //Back button slide in
+  setTimeout(function(){
+    $("#logo_area").removeClass("hide");
+    $("#button_back").removeClass("hide");
+  }, 500);
 });
