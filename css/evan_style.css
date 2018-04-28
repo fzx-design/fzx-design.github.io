@@ -247,6 +247,7 @@ p{
   height: 550px;
   background: no-repeat center;
   background-size: cover;
+  background-color: #EDEDED;
 }
 .story_header_hidden{
   transform: translate(0,-350px);
