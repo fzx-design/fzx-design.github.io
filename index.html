@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78702312-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-78702312-1');
+</script>
+
     <meta charset="UTF-8">
-    <title>Evan - Home</title>
+    <title>Evan Feng - Home</title>
     <link rel="stylesheet" type="text/css" href="css/evan_style.css" >
     <link rel="stylesheet" type="text/css" href="css/home_style.css" >
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -15,18 +25,18 @@
   <a href="about.html"><div class="button button_black">about me</div></a> -->
 </div>
 
-<div id="home_header_bg">
+<div class="home_header_bg">
   <div id="home_header_container">
-    <div id="header_1" class="home_header_content header_hide"><h1>Digital Product Designer</h1></div>
-    <div id="header_2" class="home_header_content header_hide"><h1 style="display: inline-block; margin-right: 12px; margin-bottom: 0">Former </h1><div id="bmw_logo"></div><h1>UX Design Intern</h1></div>
-    <div id="header_3" class="home_header_content header_hide"><h1 style="margin-bottom: 0">A dog person</h1><div id="dog_emoji"></div></div>
+    <a href="about.html"><div id="header_1" class="home_header_content header_hide"><h1>Digital Product Designer</h1></div></a>
+    <a href="about.html"><div id="header_2" class="home_header_content header_hide"><h1 style="display: inline-block; margin-right: 12px; margin-bottom: 0">Former </h1><div id="bmw_logo"></div><h1>UX Design Intern</h1></div></a>
+    <a href="about.html"><div id="header_3" class="home_header_content header_hide"><h1 style="margin-bottom: 0">A dog person</h1><div id="dog_emoji"></div></div></a>
   </div>
 </div>
 
-<div id="home_body">
+<div id="home_body" class="home_body_hidden">
   <div id="home_story_container" data-parallax='{"y": -100, "smoothness": 5}'>
-    <div class="home_story_cell">
-        <a href="psa.html">
+    <a href="psa.html">
+      <div class="home_story_cell">
         <div class="home_story_cell_texts">
           <h5 class="home_story_company">Citroën</h5>
           <h5 class="home_story_year">2016</h5>
@@ -34,8 +44,8 @@
         </div>
         <div class="home_story_cell_hover_bg"></div>
         <div class="home_story_image" id="home_story_psa"></div>
-        </a>
       </div>
+    </a>
     <div class="home_story_cell">
         <div class="home_story_cell_texts">
           <h5 class="home_story_company">VCard</h5>
@@ -49,7 +59,7 @@
         <div class="home_story_cell_texts">
           <h5 class="home_story_company">Huawei</h5>
           <h5 class="home_story_year">2017</h5>
-          <div class="home_story_title"><h3>Building the Container for a Complex Workflow</h3></div>
+          <div class="home_story_title"><h3>Simplifying the Workflow for Professional Users</h3></div>
         </div>
         <div class="home_story_cell_hover_bg"></div>
         <div class="home_story_image" id="home_story_huawei"></div>
@@ -58,7 +68,7 @@
         <div class="home_story_cell_texts">
           <h5 class="home_story_company" style="color: white">BMW</h5>
           <h5 class="home_story_year">2016</h5>
-          <div class="home_story_title"><h3>Enabling Seamless Interactions</h3></div>
+          <div class="home_story_title"><h3>Designing for Global Markets with Satellite Teams</h3></div>
         </div>
         <div class="home_story_cell_hover_bg"></div>
         <div class="home_story_image" id="home_story_bmw"></div>

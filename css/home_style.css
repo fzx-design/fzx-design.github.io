@@ -8,12 +8,18 @@
   visibility: hidden;
   left:-999em; /* Move this out of window */
 }
-#home_header_bg{
-  background-color: #EDEDED;
+.home_header_bg{
+  transition-duration: 1s;
   width: 100%;
   height: 428px;
   position: relative;
   z-index: 0;
+  background: linear-gradient(360deg, #FFFFFF 0%, #FFFFFF 25%, #DDDDDD 50%, #EDEDED 75%, #EDEDED 100%);
+  background-size: 100% 400%;
+  background-position-y: 100%;
+}
+.home_header_white{
+  background-position-y: 0%;
 }
 #home_header_container{
   width: 912px;
@@ -49,10 +55,15 @@
   background-image: url(../src/dog_emoji.png);
 }
 #home_body{
+  transition-duration: 1s;
   position: relative;
   width: 912px;
   padding:0 28px 0 28px;
   margin: 0 auto;
+}
+.home_body_hidden{
+  transform: translate(0,-80px);
+  opacity: 0;
 }
 #home_story_container{
   position: relative;

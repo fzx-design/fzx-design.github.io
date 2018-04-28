@@ -18,8 +18,10 @@ $(document).ready(function(){
   $("#footer").append(footer);
 
   //Back button slide in
+  $(".story_header_img").removeClass("story_header_hidden");
+  $("#story_first").removeClass("story_first_hidden");
   setTimeout(function(){
     $("#logo_area").removeClass("hide");
     $("#button_back").removeClass("hide");
-  }, 500);
+  }, 1000);
 });

@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+    console.log( "Home ready!" );
     //Append nav & footer
     var nav_home = '<a href="index.html"><div class="logo_nav"></div></a>\
     <a href="about.html"><div class="button button_black">about me</div></a>';
@@ -21,25 +21,37 @@ $( document ).ready(function() {
       $("#header_1").removeClass("header_hide"); //show header 1
       setTimeout(function(){ //hide header 1
         $("#header_1").addClass("header_hide");
-      },3000);
+      },2000);
       setTimeout(function(){ //show header 2
         $("#header_2").removeClass("header_hide");
-      },4000);
+      },3000);
       setTimeout(function(){ //hide header 2
         $("#header_2").addClass("header_hide");
-      },7000);
+      },5000);
       setTimeout(function(){ //show header 3
         $("#header_3").removeClass("header_hide");
-      },8000);
+      },6000);
       setTimeout(function(){ //hide header 3
         $("#header_3").addClass("header_hide");
-      },11000);
+      },8000);
     }
 //------------------------
+
+
     setTimeout(function(){ // Delay the first animation
       circle(); //first round
       setInterval(function(){
         circle();
-      }, 12000);
-    }, 500);
+      }, 9000);
+    }, 300);
+
+    setTimeout(function(){
+      $(".home_header_bg").addClass("home_header_white");
+      $("#home_body").removeClass("home_body_hidden");
+    }, 1000);
+
+    // setTimeout(function(){
+    //   $("#home_body").removeClass("home_body_hidden");
+    // }, 1000);
+
 });

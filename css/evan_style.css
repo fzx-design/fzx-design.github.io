@@ -157,6 +157,14 @@ p{
   background-color: #FB5B92;
   color: white;
 }
+.button_about{
+  margin: 0 12px 0 0;
+  width: 88px;
+  height: 36px;
+  font-size: 18px;
+  line-height: 36px;
+  border-radius: 8px;
+}
 .logo_nav{
   transition-property: all;
   transition-duration: .7s;
@@ -233,13 +241,23 @@ p{
   line-height: 18px;
 }
 .story_header_img{
+  transition-duration: 1s;
   width: 100%;
   margin-bottom: 48px;
   height: 550px;
   background: no-repeat center;
   background-size: cover;
 }
+.story_header_hidden{
+  transform: translate(0,-350px);
+  opacity: 0;
+}
+.story_first_hidden{
+  transform: translate(0,-150px);
+  opacity: 0;
+}
 .story_container{
+  transition-duration: 1s;
   position: relative;
   padding: 0 28px 0 28px;
   width:calc(968px - 28px - 28px);
@@ -355,9 +373,9 @@ p{
   line-height: 20px;
 }
 .story_focus{
-  font-size: 24px;
+  font-size: 28px;
   font-family: "SF Bold";
-  line-height: 32px;
+  line-height: 36px;
   color: black;
 }
 .story_focus.is_title{
@@ -393,6 +411,7 @@ p{
   padding-top: 28px;
   margin-bottom: 28px;
   display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -431,7 +450,7 @@ p{
   border-radius: 12px;
   background: no-repeat center;
   background-size: cover;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
 }
 #footer_nav_pre_text{
   width: 300px;
@@ -457,6 +476,11 @@ p{
 }
 .footer_nav_text{
   transition-duration: .7s;
+  font-family: "SF Semi";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 6px;
 }
 .footer_nav_area:hover .footer_nav_text{
   transition-duration: .3s;
