@@ -1,3 +1,12 @@
 #psa_header{
   background-image: url(../src/psa_cover.jpg);
 }
+#psa_img_test{
+  background-image: url(../src/psa_test_photo.jpg);
+}
+#psa_img_dash{
+  background-image: url(../src/psa_dash.jpg);
+}
+#psa_footer_tn_pre{
+  background-image: url(../src/home_thumbnail_bmw.jpg);
+}

@@ -17,16 +17,158 @@
 <!-- <img class="story_header_img" src="src/psa_cover.jpg" /> -->
 <div id="psa_header" class="story_header_img"></div>
 
-<div id="story_container">
+<div class="story_container">
   <div id="story_title_box">
     <h4 style="color: black">Citroën</h4>
     <div id="story_title_year">2016</div>
     <h1>Balancing Complexity and Functionality<h1>
   </div>
+
   <div id="story_info_box">
-    hahaha
+    <div class="story_info_col">
+      <div class="story_info_title">Team</div>
+      <div class="story_info bold">Me (Design Lead)</div>
+      <div class="story_info">Tong Li (Project Management)</div>
+      <div class="story_info">Xin Guan (Industrial Design, Design Engineering)</div>
+      <div class="story_info">Dachuan Liu (User Test Lead)</div>
+      <div class="story_info">Rui Zhang (Development Lead)</div>
+      <div class="story_info">Thomas S. (PSA Lab Lead)</div>
+    </div>
+    <div class="story_info_col">
+      <div class="story_info_title">Tools I Used</div>
+      <div class="story_info">Affinity Designer</div>
+      <div class="story_info">KeyShot</div>
+      <div class="story_info">Sketch</div>
+    </div>
+  </div>
+
+  <div class="story_content_box">
+    <p>In late 2015, Groupe PSA, a leading French automobile manufacturer sold under the Peugeot, Citroën, DS, Opel and Vauxhall brands, started a collaboration with our lab (Center for Digital Innovation, Tongji University) to design a concept car human-machine interface (HMI), the company’s next-generation product (2017). With all the new multi-sensory technology, PSA wanted a better, yet simpler solution for their customers.</p>
+    <p>I was the design lead in Tongji’s team which designed the HMI foundation and the immersive test environment. Building a more powerful and capable system with less user distraction was a difficult task, so we started with reimagining the way users interact with their cars.</p>
+
+    <div class="story_chapter_title_box">
+      <div class="story_chapter_number">1</div>
+      <h2 class="story_chapter_title">See Beneath the Ground</h2>
+      <h2>Users seemed to hate everything, which is understandable because they were driving.</h2>
+    </div>
+    <p>Analyzing the prophase user research report from PSA, we listed the main touchpoints at the system level and mapped related pain points on them. One of our most important findings was that for almost all the touchpoints, despite a few complaints about asking for a feature or fix, slow and complicated interaction was the top pain point. It seemed users are not enjoying doing anything on the touch screens inside their cars.</p>
+    <img class="story_img_inline" src="src/psa_feature_grid.jpg" />
+    <div class="story_img_annotation">
+      <div class="story_img_annotation_arrow"></div>
+      <div class="story_img_annotation_text">Most of the core features were below the baseline according to the report from PSA </div>
+    </div>
+    <p>So what now? Maybe going back to analog controls? It did not feel like a good idea to put a physical keyboard on the steering wheel though. To tackle the actual problem, I asked a question:</p>
+    <div class="story_focus">Why are the features designed to be so complicated and frustrating?</div>
+    <p>I found the question too vague and broad. The current touchscreen-based system is actually designed to be pretty similar to the systems on smartphones people are using every day. There seemed to be no answer in this UI and feature dimension, so I took one step backward and started thinking on a lower level. This time, I rephrased the question on the user behaviour and cognition level:</p>
+    <div class="story_focus">What makes the interactions in cars feel more complicated and frustrating?</div>
+    <p>A more straight-forward answer to this question could be complex functionality. But by digging one level deeper, I realized the reason behind it is the higher cognitive load. Users are less capable to manipulate things because driving is already a major task which demands a lot of concentration, and safety is an essential requirement.</p>
+    <div class="story_focus">The problem is that letting users input everything intentionally and manually creates a major distraction which conflicts with the essential task in cars.</div>
+    <p>So the core is not only about how the UI is optimized but the interaction mechanism behind the entire UI.</p>
+
+    <div class="story_chapter_title_box">
+      <div class="story_chapter_number">2</div>
+      <h2 class="story_chapter_title">Reimagine the Foundation</h2>
+      <h2>The ultimate optimization for user manipulation is to make the system proactive.</h2>
+    </div>
+    <p>How might we make the system-human interaction mechanism better? Inspired by Siri Proactive in iOS 9, we tried to develop a more generic framework to enable proactivity across the system. With the help of PSA engineers, I designed the Proactive Mechanism for our system.</p>
+    <img class="story_img_inline" src="src/psa_proactive_mecha.jpg" />
+    <p>The ideal process of a proactive interaction contains three phases. First, the process has to be triggered by a certain input or data pattern. For example, the interior camera sensor detecting a new passenger, or the current time matching the car’s history of locations at this time on other days. Next, the system will build a perception model of user behavior, the environment, and the context. For example, the rear seats are empty and the rear zone AC is on. Finally, the system will make responses in certain ways such as suggesting or executing tasks. A confirmation process will be executed following the response to give inputs to the system data pattern. A simple example of this phase is the system turning off the rear zone AC and marking this action ‘positive’ since the user did not reverse the change.</p>
+    <div class="story_focus">We shifted our thinking from Human-Machine Interaction to ‘Machine-Human Interaction’.</div>
+    <p>With the mechanism as a framework, we reimagined the basic user flows for the core features. Instead of users starting the flow, the system now proposes task requirements to start the interaction and even complete the whole flow automatically in some cases such as finding parking spaces in navigation when the car is arriving at a new destination.</p>
   </div>
 </div>
+
+<img class="story_img_canvas" src="src/psa_wip.jpg" />
+
+<div class="story_container with_side_img">
+  <div class="story_content_box">
+    <p class="in_flex">My team worked closely with PSA test team to make sure the new design was concrete and technically feasible. The system is not only a sleek concept to showcase but also a guideline and roadmap for their next generation product. We conducted several internal tests with the customized HMI Simulation Test Platform.</p>
+  </div>
+  <div id="psa_img_test" class="story_img_side" data-parallax='{"y": 100, "smoothness": 5}'></div>
+</div>
+
+<div class="story_container">
+  <div class="story_content_box">
+    <div class="story_chapter_title_box">
+      <div class="story_chapter_number">3</div>
+      <h2 class="story_chapter_title">Final Design</h2>
+      <h2>We made a feature-loaded system better and smarter, without compromising driving safety.</h2>
+    </div>
+    <p>With the system-wide proactive mechanism, proper functions and data will be displayed without user manipulation. The UI is neat and self-organized, we made most of the tasks accessible within 1 step in corresponding use scenarios. </p>
+    <div class="story_focus is_title">Universal Smart Suggestion</div>
+    <p>The system presents scenario predictions and task suggestions in various built-in apps such as Navigation and Cabin Ambient. For example, Navigation will recommend the most likely destination and suggest a POI search according to environmental information. The suggestion-based flow is designed in almost every part of the infotainment system to reduce the need for user manipulation.</p>
+  </div>
+</div>
+
+<img class="story_img_canvas" src="src/psa_smart_suggestion.jpg" />
+
+<div class="story_container">
+  <div class="story_content_box">
+    <p>Also, cooperated with the camera sensor and the skin temperature sensor, the system is able to proactively adjust the ambient light and fragrance, and change the zone temperature. </p>
+  </div>
+</div>
+
+<div class="story_container with_side_img">
+  <div class="story_content_box">
+    <div class="story_focus is_title">Assistance Display</div>
+    <p>The system presents scenario predictions and task suggestions in various built-in apps such as Navigation and Cabin Ambient. For example, Navigation will recommend the most likely destination and suggest a POI search according to environmental information. The suggestion-based flow is designed in almost every part of the infotainment system to reduce the need for user manipulation.</p>
+  </div>
+  <div id="psa_img_dash" class="story_img_side" data-parallax='{"y": 100, "smoothness": 5}'></div>
+</div>
+
+<img class="story_img_canvas" src="src/psa_as_display.jpg" />
+
+<div class="story_container">
+  <div class="story_content_box">
+    <div class="story_focus is_title">Instrument Belt</div>
+    <p>The instrument cluster was redesigned to be more adaptive and less obtrusive. We started from a windshield-projection HUD, but we found it was hard to recognize in some of our simulation scenarios. This reimagined belt-like display is located slightly lower than the windshield, having similar low view obstruction of the HUD with a larger canvas and a better display.</p>
+  </div>
+</div>
+
+<img class="story_img_canvas" style="margin-bottom: 0" src="src/psa_ic.jpg" />
+
+<div id="reflection">
+  <div class="story_container">
+  <div class="story_content_box">
+    <div id="reflection_title_box">
+      <h2 class="story_chapter_title">Reflection</h2>
+      <h2>Innovation is the automatic result of asking more and deeper questions, not the process of just making something different.</h2>
+    </div>
+    <p>There are many different ways to do a concept design project for different purposes, and I think being innovative is never one of them. Being innovative is a constant practice; a long-term design strategy for any product design project that ultimately allows the design to achieve its goals. In this concept development, to be specific, the purpose was to inspire, and the goal was to make the system more powerful, yet simpler. We chose to do it differently, but only because we asked more and deeper questions. To be different was not and should not be the intention or a strategy, it was one of the things we got, after the journey of finding the solution. </p>
+    <div class="story_focus">I was wrong about many things, and realizing this was vital to get out of the bottleneck.</div>
+    <p>Talking about learning from mistakes sounds like a cliche, but it is especially true in a solution-oriented concept design project like this. There was more space to explore, so more mistakes to make. During the process of tackling the problems, the mistakes I made were like the air inside the bottle I was in. They kept growing and pushing me to the right track to the outside. It was harder at the near end, the bottleneck, but I suddenly felt the click at the moment I was pushed out. The egg popped out of the bottle. It was not only about that moment, but I also realized how important the mistakes and on-going learnings are for allowing this to happen.</p>
+
+
+  </div>
+  </div>
+</div>
+
+<div class="story_container">
+  <div id="footer_nav">
+    <div id="footer_nav_pre">
+      <h5 class="footer_nav_title" style="font-family:'SF Normal'">Previous Story</h5>
+      <div id="footer_nav_pre_cell"  class="footer_nav_area">
+        <div id="psa_footer_tn_pre" class="footer_nav_thumbnail"></div>
+        <div id="footer_nav_pre_text" class="footer_nav_text">
+          <h4 style="color: black">BMW</h4>
+          <h4 style="color: black; font-family:'SF Normal'">Enabling Seamless Interactions</h4>
+        </div>
+      </div>
+     </div>
+
+    <div id="footer_nav_next">
+      <h5 class="footer_nav_title" style="text-align: right; font-family:'SF Normal'">Next Story</h5>
+      <div id="footer_nav_next_cell"  class="footer_nav_area">
+        <div id="psa_footer_tn_pre" class="footer_nav_thumbnail"></div>
+        <div id="footer_nav_next_text" class="footer_nav_text">
+          <h4 style="color: black">VCard</h4>
+          <h4 style="color: black; font-family:'SF Normal'">Designing the Best Weibo Experience for iPad</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="footer"></div>
 
 </body>
