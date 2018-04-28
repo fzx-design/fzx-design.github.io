@@ -1,0 +1,13 @@
+#bmw_header{
+  background-image: url(../src/bmw_header.jpg);
+  height: 678px;
+}
+#bmw_img_desk{
+  background-image: url(../src/bmw_img_desk.jpg);
+}
+#bmw_footer_tn_pre{
+  background-image: url(../src/home_thumbnail_huawei.jpg);
+}
+#bmw_footer_tn_next{
+  background-image: url(../src/home_thumbnail_psa.jpg);
+}

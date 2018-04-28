@@ -7,7 +7,6 @@
   width: 100%;
 }
 #about_bubble_l{
-  transition-duration: .7s;
   position: absolute;
   top: 15%;
   left: -1%;
@@ -18,7 +17,6 @@
   background-image: url(../src/about_bubble_l.png);
 }
 #about_bubble_r{
-  transition-duration: .7s;
   position: absolute;
   top: 5%;
   right: -15%;
@@ -33,6 +31,7 @@
   opacity: 0;
 }
 .about_header_hidden{
+  transform: translate(0,-300px);
   opacity: 0;
 }
 #about_button_area{

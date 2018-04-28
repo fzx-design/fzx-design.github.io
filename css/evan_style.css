@@ -174,11 +174,11 @@ p{
   background-size: contain;
   background-image: url(../src/logo.svg);
 }
-.logo_nav:hover{
+/* .logo_nav:hover{
   transition-duration: .3s;
   cursor: pointer;
   transform: translate(0,-2px);
-}
+} */
 #logo_area{
   transition-property: all;
   transition-duration: .7s;

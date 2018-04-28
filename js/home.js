@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     console.log( "Home ready!" );
     //Append nav & footer
-    var nav_home = '<a href="index.html"><div class="logo_nav"></div></a>\
+    var nav_home = '<div class="logo_nav"></div>\
     <a href="about.html"><div class="button button_black">about me</div></a>';
     var footer = '<div id="footer_flex">\
       <div id="annotation_area">\
