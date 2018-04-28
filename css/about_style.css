@@ -1,4 +1,5 @@
 #about_header_area{
+  transition-duration: 1s;
   position: relative;
   overflow: hidden;
 }
@@ -28,7 +29,10 @@
   background-image: url(../src/about_bubble_r.png);
 }
 .about_hidden{
-  transform: translate(0,20px);
+  transform: translate(0,-100px);
+  opacity: 0;
+}
+.about_header_hidden{
   opacity: 0;
 }
 #about_button_area{
