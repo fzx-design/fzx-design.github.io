@@ -521,6 +521,7 @@ p{
 .footer_nav_area{
   transition-property: all;
   transition-duration: .7s;
+  transform: scale(1,1) translate(0,0);
 }
 .footer_nav_area:hover{
   transition-property: all;
@@ -532,6 +533,7 @@ p{
 }
 .footer_nav_text{
   transition-duration: .7s;
+  transform: translate(0,0);
   font-family: "SF Semi";
   font-weight: normal;
   font-size: 20px;

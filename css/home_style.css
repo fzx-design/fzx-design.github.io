@@ -126,6 +126,7 @@
 .home_story_company{
   transition-property: all;
   transition-duration: .7s;
+  transform: scale(1,1) translate(0,0);
   margin-bottom: 4px;
 }
 .home_story_cell:hover .home_story_company{
@@ -166,6 +167,7 @@
   transition-property: all;
   transition-duration: .7s;
   opacity: 0;
+  transform: scale(1,1) translate(0,0);
   color: #215DA2;
 }
 .home_story_cell:hover .home_story_year{
@@ -177,6 +179,7 @@
   transition-property: all;
   transition-duration: .7s;
   opacity: 0;
+  transform: translate(0,0);
   width: 288px;
   margin-top: 120px;
   margin-left: 24px;
@@ -208,6 +211,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  transform: scale(1,1) translate(0,0);
   border-radius: 8px;
   height: 120px;
   margin-bottom: 20px;
@@ -215,6 +219,7 @@
 .home_concept_cell_text_container{
   transition-duration: .7s;
   position: relative;
+  transform: translate(0,0);
   width: 506px;
 }
 .home_concept_cell_name{
