@@ -250,6 +250,7 @@ p{
 .story_header_img{
   transition-duration: 1s;
   width: 100%;
+  min-width: 968px;
   margin-bottom: 48px;
   height: 550px;
   background-repeat: no-repeat;

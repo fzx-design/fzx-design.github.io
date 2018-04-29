@@ -1,0 +1,64 @@
+#huawei_header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #FFE460;
+  overflow: hidden;
+  /* margin-bottom: 0; */
+}
+#huawei_header_img{
+  width: 968px;
+  height: 455px;
+  background: no-repeat center;
+  background-size: contain;
+  background-image: url(../src/huawei_header.png);
+}
+#huawei_side_annotation{
+  width: 260px;
+  margin: -140px 0 138px 0;
+}
+#huawei_side_annotation_text{
+  width: 228px;
+}
+#huawei_old_small{
+  flex-shrink: 0;
+  width: 293px;
+  height: 170px;
+  margin-top: 88px;
+  background: no-repeat center;
+  background-size: contain;
+  background-image: url(../src/huawei_old_small.jpg);
+}
+#huawei_nic_task{
+  width: 797px;
+  height: 517px;
+  background: no-repeat center;
+  background-size: contain;
+  background-image: url(../src/huawei_nic_task.png);
+}
+#huawei_mml_qf{
+  width: 800px;
+  height: 322px;
+  background: no-repeat center;
+  background-size: contain;
+  background-image: url(../src/huawei_mml_qf.jpg);
+}
+#huawei_mml_wiki{
+  flex-shrink: 0;
+  width: 300px;
+  height: 328px;
+  border-radius: 6px;
+  background: no-repeat center;
+  background-size: contain;
+  background-image: url(../src/huawei_mml_wiki.jpg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16),0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+#huawei_footer_tn_pre{
+  background-image: url(../src/footer_nav_vcard.jpg);
+}
+#huawei_footer_tn_next{
+  background-image: url(../src/home_thumbnail_bmw.jpg);
+}

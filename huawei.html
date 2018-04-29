@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78702312-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-78702312-1');
+</script>
+
+    <meta charset="UTF-8">
+    <title>Evan Feng - Huawei</title>
+    <link rel="stylesheet" type="text/css" href="css/evan_style.css" >
+    <link rel="stylesheet" type="text/css" href="css/huawei_style.css" >
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.parallax-scroll.js"></script>
+</head>
+
+<body>
+<div class="nav_bar"></div>
+
+<div id="huawei_header" class="story_header_img story_header_hidden">
+  <div id="huawei_header_img"></div>
+</div>
+
+<div id="story_first" class="story_container story_first_hidden">
+  <div id="story_title_box">
+    <h4 style="color: black">Huawei</h4>
+    <div id="story_title_year">2017</div>
+    <h1>Simplifying the Workflow for Professional Users<h1>
+  </div>
+
+  <div id="story_info_box">
+    <div class="story_info_col">
+      <div class="story_info_title">Team</div>
+      <div class="story_info bold">Me (Design Lead, Visual Design)</div>
+      <div class="story_info">Xiaohua Sun (Supervision)</div>
+      <div class="story_info">Jinglu Li (Research)</div>
+      <div class="story_info">Le Gao (UX Design)</div>
+    </div>
+    <div class="story_info_col">
+      <div class="story_info_title">Tools I Used</div>
+      <div class="story_info">Sketch</div>
+      <div class="story_info story_info_last">WebStorm (JavaScript)</div>
+      <div class="story_info_title">Link</div>
+      <a href="http://e.huawei.com/en-hk/products/wireless/elte-access/network-element/m2000" target="_blank" class="story_info">Huawei</a>
+    </div>
+  </div>
+
+  <div class="story_content_box">
+    <p>Huawei, a long-term collaborator of our research center (CDI) at Tongji University, hired my team to help them reimagine their aging NIC (Network Information Collection) module in their network management system, which is a multi-module toolkit for different tasks in the network management workflow.</p>
+    <p>The NIC module we were tackling serves as an interface for network engineers to send tasks to the network element hardwares for maintenance purposes such as a status check or a performance inspection. The module also links to a separate command editing tool (MML) for users to edit and send customized task commands.</p>
+
+    <div class="story_chapter_title_box" style="width:550px">
+      <div class="story_chapter_number">1</div>
+      <h2 class="story_chapter_title">Don’t say anything…not yet.</h2>
+      <h2>To build an equal collaboration with Huawei, we role-played as NMS engineers before everything kicked off.</h2>
+    </div>
+
+    <p>Figuring out issues of a complicated professional tool like NIC can be challenging without deeply understanding the workflow, so we spent a week at Huawei to actually learn and use the system. We went to ‘work’ at 9 AM  every day during the week, just like every other rookie employee.</p>
+
+    <div class="story_focus">Having such hands-on experience before the kickoff discussion helped the team build a thorough unbiased first-person understanding of the product that enabled an equal conversation later with the client.</div>
+    <p>With the background knowledge, we conducted a project orientation meeting with Huawei, where we shared thoughts about pain points with each other. The conversation was smooth and mutually inspiring as we were not only taking inputs from the client but also outputting our findings, and everyone reached alignment about the core issues and goals before the end of the meeting.</p>
+
+    <div class="story_chapter_title_box">
+      <div class="story_chapter_number">2</div>
+      <h2 class="story_chapter_title">Now back to the classics.</h2>
+      <h2>We listed pain points, from which we listed design goals, from which we listed challenges.</h2>
+    </div>
+
+    <p>Based on the role-play experience and the discussion with Huawei, we thought the problem was that the software was overloaded with unnecessary features displayed by confusing last-generation UI. To be more specific, we listed the main pain points.</p>
+  </div>
+
+  <img class="story_img_inline_larger" src="src/huawei_old.jpg" />
+
+  <div class="story_content_box">
+    <div id="huawei_side_annotation" class="story_img_annotation">
+      <div id="huawei_side_annotation_text" class="story_img_annotation_text">The software was overloaded with unnecessary features displayed by confusing last-generation UI.</div>
+      <div class="story_img_annotation_arrow"></div>
+    </div>
+
+    <div class="story_focus is_title">Redundant functionality, heavy and dated UI</div>
+    <p>It seems the software was designed to be complicated on purpose to make it feel ‘professional’. The base structure is a double-wrapped tab menu with a universal menu bar in addition.</p>
+    <p>The task list shows every data item you can ever imagine, even though many of them are actually useless according to our experience with the engineers.</p>
+  </div>
+</div>
+
+<div class="story_container with_side_img">
+  <div class="story_content_box">
+    <div class="story_focus is_title">Tedious and time-consuming data input experience</div>
+    <p>Creating preset and customized tasks are the most frequent (if not the only two) use cases for the NIC and MML, and there are more than 20 obscure parameters that need to be carefully filled out every time. The current UI offers a long and unrecognizable table of data.</p>
+  </div>
+  <div id="huawei_old_small"></div>
+</div>
+
+<div class="story_container">
+  <div class="story_content_box">
+    <div class="story_focus is_title">Confusing terms and parameters</div>
+    <p>As I mentioned before, there are more than 150 types of parameters users might encounter in the software, and each of them has various versions based on the selected network element. Figuring out what to type in is frustrating especially for non-senior engineers, which usually doubles the work time because of the extra needed help from a senior engineer.</p>
+    <p>Based on the listed pain points, we set up the goals with Huawei and made a roadmap showing the main challenges for achieving the goals.</p>
+  </div>
+
+  <img class="story_img_inline_large" src="src/huawei_roadmap.jpg" />
+  <div class="story_content_box">
+    <p>With these challenges in mind, we finally had the right questions to ask, and it was time to find out the answers with users.</p>
+
+    <div class="story_chapter_title_box">
+      <div class="story_chapter_number">3</div>
+      <h2 class="story_chapter_title">Inspired by the users.</h2>
+      <h2>We interviewed the expert users and gained inspiration from their answers to the challenges, then we tried, tested, and iterated.</h2>
+    </div>
+
+    <p>Designing something for a professional niche for the first time, listening has never been this vital in a process. We kicked off with a talk with several senior NMS engineers, asking for their ideas and thoughts about the challenges we listed. It was like a brainstorming session combined with an interview, which was facilitated by us the designers. </p>
+  </div>
+</div>
+
+<img class="story_img_canvas" src="src/huawei_flow.jpg" />
+
+<div class="story_container">
+  <div class="story_content_box">
+    <div class="story_img_annotation">
+      <div class="story_img_annotation_arrow"></div>
+      <div class="story_img_annotation_text">Wireframe flow of the second iteration (partial)</div>
+    </div>
+
+    <p>I led the team through several rounds of test-iteration afterward. Instead of keeping things Lo-Fi until the final iteration, we actually tried to include some visual elements in some early versions since one of our goals was visual design related. The test-proved visual elements also became the inspiration for our entire UI visual construction later.</p>
+    <p>The countless small deltas finally led us toward the goals we defined at the beginning.</p>
+
+    <div class="story_chapter_title_box">
+      <div class="story_chapter_number">4</div>
+      <h2 class="story_chapter_title">We have made things better.</h2>
+      <h2>It is an expandable foundation, a tangible inspiration for something bigger in the future.</h2>
+    </div>
+    <p>The end result was dramatically better compared with the original version, but also humble and unobtrusive when users dive into it. There were reductions that simplified the product without compromise, and innovations that benefited the workflow without alienating the experience.</p>
+  </div>
+</div>
+
+<img class="story_img_canvas" src="src/huawei_hero.jpg" />
+
+<div class="story_container">
+  <div class="story_content_box">
+    <div class="story_focus" style="margin-bottom:20px">All-in-one Navigation</div>
+  </div>
+  <img class="story_img_inline_larger" src="src/huawei_nav_bar.jpg" />
+  <div class="story_content_box">
+    <p>The clumsy multi-layer navigation was redesigned to a single tab bar with all the portals users need. It also provides basic data previews and more delightful visual layout.</p>
+  </div>
+</div>
+
+<div class="story_gray_area">
+  <div class="story_container">
+    <div class="story_content_box">
+      <div class="story_focus is_title">Guided Task Generation</div>
+      <p>The endless table of text fields was organized to guided step pages with neat UI elements. To help users confirm the entire set up before sending the task, each step also shows a summary after proceeding to the next. The design gives users a full image of the task without distracting them.</p>
+    </div>
+    <div id="huawei_nic_task"></div>
+  </div>
+</div>
+
+<div class="story_container">
+  <div class="story_content_box">
+    <div class="story_focus" style="margin-bottom:20px">Quick Fill for MML</div>
+  </div>
+  <div id="huawei_mml_qf"></div>
+  <div class="story_content_box">
+    <p>When filling cells in a long table, the user's attention is constantly moving between rows. The quick fill is a solution to quickly jump between data items without changing the position of the input area. The command table was also replaced by a more clear and intuitive ‘block’ view which was made possible by the item-input isolation design.</p>
+  </div>
+</div>
+
+<div class="story_container with_side_img">
+  <div class="story_content_box">
+    <div class="story_focus is_title">Built-in Wiki for MML</div>
+    <p>A context-based wiki was embedded into the MML module. Users will be able to see the corresponding definition and instructions about the selected parameter right inside the interface.</p>
+  </div>
+  <div id="huawei_mml_wiki" data-parallax='{"y": -60, "smoothness": 5}'></div>
+</div>
+
+<div class="reflection">
+  <div class="story_container">
+    <div class="story_content_box">
+      <div id="reflection_title_box">
+        <h2 class="story_chapter_title">Reflection</h2>
+        <h2>Always invite the users to the journey, and it is better to listen and follow than tell and guide in some cases.</h2>
+      </div>
+      <p>Almost all the projects I have done in recent years were user-involved, and the collaboration with Huawei was an extreme. We learned from users and worked together with them. In this case, I felt the real necessity of asking the right questions and listening carefully. The goals would have been a lot more difficult to achieve without designers, clients, and experts working together.</p>
+      <div class="story_focus">Design is not only to fit the current flow. Sometimes it is also about enabling and educating users to make better decisions.</div>
+      <p>Designing a professional tool like this, I realized how powerful even a tiny design decision could be to change users’ behaviours. It is really important to test and observe to make sure every change is leading users to the right track. A truly successful design will not only support the existing workflow but, more sustainably, guide users to a better flow.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="story_container">
+  <div id="footer_nav">
+    <a href="vcard.html"><div id="footer_nav_pre">
+      <h5 class="footer_nav_title" style="font-family:'SF Normal'">Previous Story</h5>
+      <div id="footer_nav_pre_cell"  class="footer_nav_area">
+        <div id="huawei_footer_tn_pre" class="footer_nav_thumbnail"></div>
+        <div id="footer_nav_pre_text" class="footer_nav_text">
+          <div>VCard</div>
+          <div style="font-family:'SF Normal'">Designing the Best Weibo Experience for iPad</div>
+        </div>
+      </div>
+    </div></a>
+
+    <a href="bmw.html"><div id="footer_nav_next">
+      <h5 class="footer_nav_title" style="text-align: right; font-family:'SF Normal'">Next Story</h5>
+      <div id="footer_nav_next_cell"  class="footer_nav_area">
+        <div id="huawei_footer_tn_next" class="footer_nav_thumbnail"></div>
+        <div id="footer_nav_next_text" class="footer_nav_text">
+          <div>BMW</div>
+          <div style="font-family:'SF Normal'">Designing for Global Markets with Satellite Teams</h4>
+        </div>
+      </div>
+      </div>
+    </div></a>
+  </div>
+</div>
+
+<div id="footer"></div>
+
+<script src="js/story.js"></script>
+</body>
+</html>
