@@ -255,7 +255,7 @@ p{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background:linear-gradient(to top, #FFFFFF, #EDEDED 10%);
+  background-color: #EDEDED;
 }
 .story_header_hidden{
   transform: translate(0,-350px);

@@ -1,7 +1,7 @@
 #vcard_header{
   background-image: url(../src/vcard_header.jpg);
   background-position: bottom;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 #vcard_img_never_go_back{
   background-image: url(../src/vcard_zichuan.jpg);
