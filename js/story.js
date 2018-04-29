@@ -17,9 +17,11 @@ $(document).ready(function(){
   $(".nav_bar").append(nav);
   $("#footer").append(footer);
 
-  //Back button slide in
-  $(".story_header_img").removeClass("story_header_hidden");
-  $("#story_first").removeClass("story_first_hidden");
+  //Content shown and back button slide in
+  setTimeout(function(){
+    $(".story_header_img").removeClass("story_header_hidden");
+    $("#story_first").removeClass("story_first_hidden");
+  }, 300);
   setTimeout(function(){
     $("#logo_area").removeClass("hide");
     $("#button_back").removeClass("hide");
