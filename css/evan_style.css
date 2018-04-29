@@ -1,7 +1,7 @@
 html{
     font-size:100%;
     -webkit-text-size-adjust: 100%;
-    font-family: "SF Normal","PT",sans-serif;
+    font-family: sans-serif, serif;
     height:100%;
     -webkit-backface-visibility: hidden;
 }
@@ -50,7 +50,7 @@ body{
 h1{
   font-weight: normal;
   font-style: normal;
-  font-family: "SF Bold";
+  font-family: "SF Bold", sans-serif;
   margin-top: 0;
   margin-bottom: 90px;
   letter-spacing: .4px;
@@ -61,7 +61,7 @@ h1{
 h2{
   font-weight: normal;
   font-style: normal;
-  font-family: "SF Bold";
+  font-family: "SF Bold", sans-serif;
   color: black;
   letter-spacing: .4px;
   font-size: 38px;
@@ -71,7 +71,7 @@ h2{
 h3{
   font-weight: normal;
   font-style: normal;
-  font-family: "SF Semi";
+  font-family: "SF Semi", sans-serif;
   margin:0;
   color: white;
   letter-spacing: .5px;
@@ -81,7 +81,7 @@ h3{
 h4{
   font-weight: normal;
   font-style: normal;
-  font-family: "SF Semi";
+  font-family: "SF Semi", sans-serif;
   margin:0;
   color: black;
   font-size: 28px;
@@ -90,7 +90,7 @@ h4{
 h5{
   font-weight: normal;
   font-style: normal;
-  font-family: "SF Bold";
+  font-family: "SF Bold", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   color: #000000;
@@ -100,7 +100,7 @@ h5{
 p{
   font-weight: normal;
   font-style: normal;
-  font-family: "PT";
+  font-family: "PT", serif;
   color: black;
   font-size: 21px;
   line-height: 36px;
