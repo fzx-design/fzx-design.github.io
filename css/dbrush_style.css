@@ -1,0 +1,17 @@
+#dbrush_icon{
+  background-image: url(../src/concept_dbrush.png);
+}
+#trims_screenshot{
+  width: 912px;
+  height: 536px;
+  margin-top: -88px;
+  background: no-repeat center;
+  background-size: contain;
+  background-image: url(../src/trims_interface_main.png);
+}
+#dbrush_footer_tn_pre{
+  background-image: url(../src/concept_trims.png);
+}
+#dbrush_footer_tn_next{
+  background-image: url(../src/home_thumbnail_psa.jpg);
+}

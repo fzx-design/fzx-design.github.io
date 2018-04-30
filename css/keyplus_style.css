@@ -1,0 +1,28 @@
+#keyplus_icon{
+  background-image: url(../src/concept_keyplus.png);
+}
+#keyplus_screenshots_container{
+  width: 912px;
+  margin-left: 0;
+}
+#keyplus_s_1{
+  width: 260px;
+  height: 464px;
+  background-image: url(../src/keyplus_s_1.jpg);
+}
+#keyplus_s_2{
+  width: 260px;
+  height: 464px;
+  background-image: url(../src/keyplus_s_2.jpg);
+}
+#keyplus_s_3{
+  width: 260px;
+  height: 464px;
+  background-image: url(../src/keyplus_s_3.jpg);
+}
+#keyplus_footer_tn_pre{
+  background-image: url(../src/home_thumbnail_bmw.jpg);
+}
+#keyplus_footer_tn_next{
+  background-image: url(../src/concept_cdisoul.png);
+}

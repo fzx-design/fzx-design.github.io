@@ -1,6 +1,6 @@
 #bmw_header{
   background-image: url(../src/bmw_header.jpg);
-  height: 678px;
+  /* height: 678px; */
 }
 #bmw_img_desk{
   background-image: url(../src/bmw_img_desk.jpg);
@@ -9,5 +9,5 @@
   background-image: url(../src/home_thumbnail_huawei.jpg);
 }
 #bmw_footer_tn_next{
-  background-image: url(../src/home_thumbnail_psa.jpg);
+  background-image: url(../src/concept_keyplus.png);
 }
