@@ -10,7 +10,7 @@ $(document).ready(function(){
       <div class="annotation">© 2018 Evan Feng | Designed and developed by Evan Feng</div>\
     </div>\
     <div id="button_area">\
-      <a href="https://dribbble.com/evanfun" target="_blank"><div class="button button_pink">dribbble</div></a>\
+      <a href="https://dribbble.com/evanfun" target="_blank"><div class="button button_pink">Dribbble</div></a>\
       <a href="mailto:evanfun@me.com"><div class="button button_white">mail me</div></a>\
     </div>\
   </div>';
