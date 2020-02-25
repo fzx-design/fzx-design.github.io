@@ -2,66 +2,71 @@
 <html lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78702312-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78702312-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-gtag('config', 'UA-78702312-1');
+  gtag('config', 'UA-78702312-1');
 </script>
+<meta property="og:title" content="Evan - About">
+<meta property="og:description" content="Visual + UX Designer in Vancouver">
+<meta property="og:image" content="https://www.evanfeng.me/og.jpg">
+<meta property="og:image:secure_url" content="https://www.evanfeng.me/og.jpg" />
+<meta property="og:site_name" content="Evan Feng">
+<meta charset="UTF-8">
 
-    <meta charset="UTF-8">
-    <title>Evan Feng - About me</title>
-    <link rel="stylesheet" type="text/css" href="css/evan_style.css" >
-    <link rel="stylesheet" type="text/css" href="css/about_style.css" >
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.parallax-scroll.js"></script>
-    <script src="js/story.js"></script>
+<title>Evan Feng - About me</title>
+<link rel="stylesheet" type="text/css" href="css/evan_style.css" >
+<link rel="stylesheet" type="text/css" href="css/about_style.css" >
+<link rel="icon" type="image/png" href="favicon.png" />
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.parallax-scroll.js"></script>
+<script src="js/story.js"></script>
 
 </head>
 <body>
-<div class="nav_bar"></div>
+  <div class="nav_bar"></div>
 
-<div id="about_header_area" class="about_header_hidden">
-  <div class="story_container">
+  <div id="about_header_area" class="about_header_hidden">
+    <div class="story_container">
+      <div class="story_content_box">
+        <div id="about_header_m"></div>
+      </div>
+    </div>
+    <div id="about_header_l"></div>
+    <div id="about_header_r"></div>
+    <!-- <img id="about_header" src="src/about_header.jpg" /> -->
+    <div id="about_bubble_l" data-parallax='{"y": -400, "smoothness": 10}'></div>
+    <div id="about_bubble_m" data-parallax='{"y": 400, "smoothness": 60}'></div>
+    <div id="about_bubble_r" data-parallax='{"y": 240, "smoothness": 30}'></div>
+    <!-- <div id="about_header" class="story_header_img"></div> -->
+  </div>
+
+  <div class="story_container about_hidden">
+    <div id="story_title_box" style="width: 640px">
+      <!-- <h4 style="color: black; margin-bottom:48px">About me</h4> -->
+      <div class="story_focus" style="color: #4A90E2">Visual + UX Designer in Vancouver</div>
+    </div>
+
     <div class="story_content_box">
-      <div id="about_header_m"></div>
+      <div class="story_focus is_title">Designing digital products loved by millions of users</div>
+      <p class="in_flex">Started designing interfaces in 2010, Evan led a team with 3 developers made an app which got 2 million users and a 4 out of 5 rating. He also assisted Prof. Xiaohua Sun built an interaction design lab which later became the leading research center at Tongji D&I, one of the top design schools in the world. Working at the lab, Evan and his team helped PSA Peugeot Citroën, BMW, and Huawei tackling their design challenges. </p>
+      <div id="about_button_area">
+        <a href="src/evan_resume_0218.pdf" target="_blank"><div class="button button_white button_about">Resume</div></a>
+        <a href="https://www.linkedin.com/in/fengzexi" target="_blank"><div class="button button_white button_about">LinkedIn</div></a>
+        <a href="mailto:evanfun@me.com"><div class="button button_white button_about">Email</div></a>
+        <a href="https://dribbble.com/evanfun" target="_blank"><div class="button button_pink button_about">Dribbble</div></a>
+      </div>
+
+      <div class="story_focus is_title">UX + UI + Code</div>
+      <p>Evan has been doing UI design for over 8 years and front-end development for over 3 years. Desipte having two master degrees in the HCI field, he has been constant learning and evolving with the industy. You must really like him to read this far.</p>
+
     </div>
   </div>
-  <div id="about_header_l"></div>
-  <div id="about_header_r"></div>
-  <!-- <img id="about_header" src="src/about_header.jpg" /> -->
-  <div id="about_bubble_l" data-parallax='{"y": -400, "smoothness": 10}'></div>
-  <div id="about_bubble_m" data-parallax='{"y": 400, "smoothness": 60}'></div>
-  <div id="about_bubble_r" data-parallax='{"y": 240, "smoothness": 30}'></div>
-  <!-- <div id="about_header" class="story_header_img"></div> -->
-</div>
 
-<div class="story_container about_hidden">
-  <div id="story_title_box" style="width: 640px">
-    <!-- <h4 style="color: black; margin-bottom:48px">About me</h4> -->
-    <div class="story_focus" style="color: #4A90E2">Visual + UX Designer in Vancouver</div>
-  </div>
-
-  <div class="story_content_box">
-    <div class="story_focus is_title">Designing digital products loved by millions of users</div>
-    <p class="in_flex">Started designing interfaces in 2010, Evan led a team with 3 developers made an app which got 2 million users and a 4 out of 5 rating. He also assisted Prof. Xiaohua Sun built an interaction design lab which later became the leading research center at Tongji D&I, one of the top design schools in the world. Working at the lab, Evan and his team helped PSA Peugeot Citroën, BMW, and Huawei tackling their design challenges. </p>
-    <div id="about_button_area">
-      <a href="src/evan_resume_0218.pdf" target="_blank"><div class="button button_white button_about">Resume</div></a>
-      <a href="https://www.linkedin.com/in/fengzexi" target="_blank"><div class="button button_white button_about">LinkedIn</div></a>
-      <a href="mailto:evanfun@me.com"><div class="button button_white button_about">Email</div></a>
-      <a href="https://dribbble.com/evanfun" target="_blank"><div class="button button_pink button_about">Dribbble</div></a>
-    </div>
-
-    <div class="story_focus is_title">UX + UI + Code</div>
-    <p>Evan has been doing UI design for over 8 years and front-end development for over 3 years. Desipte having two master degrees in the HCI field, he has been constant learning and evolving with the industy. You must really like him to read this far.</p>
-
-  </div>
-</div>
-
-<div id="footer"></div>
-<script src="js/about.js"></script>
+  <div id="footer"></div>
+  <script src="js/about.js"></script>
 </body>
 </html>
