@@ -5,7 +5,6 @@ $( document ).ready(function() {
     <a href="about.html"><div class="button button_black">about me</div></a>';
     var footer = '<div id="footer_flex">\
       <div id="annotation_area">\
-        <div class="annotation" style="font-family: \'SF Semi\' ">Content may be modified or hidden due to non-disclosure agreements.</div>\
         <div class="annotation">© 2018 Evan Feng | Designed and developed by Evan Feng</div>\
       </div>\
       <div id="button_area">\
