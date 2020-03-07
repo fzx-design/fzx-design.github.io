@@ -135,6 +135,12 @@
   transform: scale(1.3,1.3) translate(42px,8px);
   color: white;
 }
+#home_story_flex{
+  background-image: url(../src/home_thumbnail_flex.jpg);
+}
+.home_story_cell:hover #home_story_flex{
+  background-image: url(../src/home_thumbnail_flex_blur.jpg);
+}
 #home_story_psa{
   background-image: url(../src/home_thumbnail_psa.jpg);
 }
